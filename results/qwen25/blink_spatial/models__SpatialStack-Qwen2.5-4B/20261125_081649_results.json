@@ -1,0 +1,240 @@
+{
+  "results": {
+    "blink_spatial": {
+      "blink_acc,none": 0.638110474697911,
+      "blink_acc_stderr,none": "N/A",
+      "alias": "blink_spatial"
+    },
+    "blink_multi_view_reasoning": {
+      "alias": " - blink_multi_view_reasoning",
+      "blink_acc,none": 0.556390977443609,
+      "blink_acc_stderr,none": "N/A"
+    },
+    "blink_relative_depth": {
+      "alias": " - blink_relative_depth",
+      "blink_acc,none": 0.5887096774193549,
+      "blink_acc_stderr,none": "N/A"
+    },
+    "blink_spatial_relation": {
+      "alias": " - blink_spatial_relation",
+      "blink_acc,none": 0.7692307692307693,
+      "blink_acc_stderr,none": "N/A"
+    }
+  },
+  "groups": {
+    "blink_spatial": {
+      "blink_acc,none": 0.638110474697911,
+      "blink_acc_stderr,none": "N/A",
+      "alias": "blink_spatial"
+    }
+  },
+  "group_subtasks": {
+    "blink_spatial": [
+      "blink_multi_view_reasoning",
+      "blink_relative_depth",
+      "blink_spatial_relation"
+    ]
+  },
+  "configs": {
+    "blink_multi_view_reasoning": {
+      "task": "blink_multi_view_reasoning",
+      "tag": "blink_groups",
+      "dataset_path": "cache/datasets/BLINK-Benchmark__BLINK/Multi-view_Reasoning",
+      "dataset_kwargs": {
+        "load_from_disk": true
+      },
+      "test_split": "val",
+      "full_docs": false,
+      "process_results_use_image": false,
+      "doc_to_visual": "<function blink_doc_to_visual at 0x748bc89ff6a0>",
+      "doc_to_text": "<function blink_doc_to_text at 0x748bc89ffc40>",
+      "doc_to_target": "answer",
+      "process_results": "<function blink_process_results at 0x748bc88402c0>",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "blink_acc",
+          "aggregation": "<function blink_aggregate_results at 0x748bc89fed40>",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "max_new_tokens": 1024,
+        "until": [
+          "\n\n"
+        ]
+      },
+      "repeats": 1,
+      "should_decontaminate": false,
+      "lmms_eval_specific_kwargs": {
+        "default": {
+          "pre_prompt": "Return exactly one uppercase option letter from the given choices ({}). Do not output any explanation, punctuation, or extra text.\n",
+          "post_prompt": ""
+        },
+        "pre_prompt": "Return exactly one uppercase option letter from the given choices ({}). Do not output any explanation, punctuation, or extra text.\n",
+        "post_prompt": ""
+      }
+    },
+    "blink_relative_depth": {
+      "task": "blink_relative_depth",
+      "tag": "blink_groups",
+      "dataset_path": "cache/datasets/BLINK-Benchmark__BLINK/Relative_Depth",
+      "dataset_kwargs": {
+        "load_from_disk": true
+      },
+      "test_split": "val",
+      "full_docs": false,
+      "process_results_use_image": false,
+      "doc_to_visual": "<function blink_doc_to_visual at 0x748bc89fda80>",
+      "doc_to_text": "<function blink_doc_to_text at 0x748bc89fe020>",
+      "doc_to_target": "answer",
+      "process_results": "<function blink_process_results at 0x748bc89fe660>",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "blink_acc",
+          "aggregation": "<function blink_aggregate_results at 0x748bc89fec00>",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "max_new_tokens": 1024,
+        "until": [
+          "\n\n"
+        ]
+      },
+      "repeats": 1,
+      "should_decontaminate": false,
+      "lmms_eval_specific_kwargs": {
+        "default": {
+          "pre_prompt": "Return exactly one uppercase option letter from the given choices ({}). Do not output any explanation, punctuation, or extra text.\n",
+          "post_prompt": ""
+        },
+        "pre_prompt": "Return exactly one uppercase option letter from the given choices ({}). Do not output any explanation, punctuation, or extra text.\n",
+        "post_prompt": ""
+      }
+    },
+    "blink_spatial_relation": {
+      "task": "blink_spatial_relation",
+      "tag": "blink_groups",
+      "dataset_path": "cache/datasets/BLINK-Benchmark__BLINK/Spatial_Relation",
+      "dataset_kwargs": {
+        "load_from_disk": true
+      },
+      "test_split": "val",
+      "full_docs": false,
+      "process_results_use_image": false,
+      "doc_to_visual": "<function blink_doc_to_visual at 0x748bc8902c00>",
+      "doc_to_text": "<function blink_doc_to_text at 0x748bc8903240>",
+      "doc_to_target": "answer",
+      "process_results": "<function blink_process_results at 0x748bc8903880>",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "blink_acc",
+          "aggregation": "<function blink_aggregate_results at 0x748bc8903e20>",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "max_new_tokens": 1024,
+        "until": [
+          "\n\n"
+        ]
+      },
+      "repeats": 1,
+      "should_decontaminate": false,
+      "lmms_eval_specific_kwargs": {
+        "default": {
+          "pre_prompt": "Return exactly one uppercase option letter from the given choices ({}). Do not output any explanation, punctuation, or extra text.\n",
+          "post_prompt": ""
+        },
+        "pre_prompt": "Return exactly one uppercase option letter from the given choices ({}). Do not output any explanation, punctuation, or extra text.\n",
+        "post_prompt": ""
+      }
+    }
+  },
+  "versions": {
+    "blink_multi_view_reasoning": "Yaml",
+    "blink_relative_depth": "Yaml",
+    "blink_spatial_relation": "Yaml"
+  },
+  "n-shot": {
+    "blink_multi_view_reasoning": 0,
+    "blink_relative_depth": 0,
+    "blink_spatial_relation": 0
+  },
+  "higher_is_better": {
+    "blink_multi_view_reasoning": {
+      "blink_acc": true
+    },
+    "blink_relative_depth": {
+      "blink_acc": true
+    },
+    "blink_spatial": {
+      "blink_acc": true
+    },
+    "blink_spatial_relation": {
+      "blink_acc": true
+    }
+  },
+  "n-samples": {
+    "blink_multi_view_reasoning": {
+      "original": 133,
+      "effective": 133
+    },
+    "blink_relative_depth": {
+      "original": 124,
+      "effective": 124
+    },
+    "blink_spatial_relation": {
+      "original": 143,
+      "effective": 143
+    }
+  },
+  "config": {
+    "model": "spatialstack",
+    "model_args": "pretrained=/mnt/4dgs/spatialstack/models/SpatialStack-Qwen2.5-4B,use_flash_attention_2=true,max_num_frames=32,max_length=12800",
+    "batch_size": "1",
+    "batch_sizes": [],
+    "device": null,
+    "use_cache": null,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "gen_kwargs": "",
+    "random_seed": 0,
+    "numpy_seed": 1234,
+    "torch_seed": 1234,
+    "fewshot_seed": 1234
+  },
+  "git_hash": "b84ebaa",
+  "date": "20261125_081649",
+  "task_hashes": {
+    "blink_multi_view_reasoning": "151b668054464529501fb18004dd451b163876359cf61e5a48f5aa8d2bc7ea79",
+    "blink_relative_depth": "7c31dd4f0369dfcf0511663bbccc80d0f6840b7f5fa5ed50cdc097431c122ab5",
+    "blink_spatial_relation": "e87dddedc16d6652336e1b41b0671d0781fb182d3428cfa36d8b60250d2577a6"
+  },
+  "model_source": "spatialstack",
+  "model_name": "/mnt/4dgs/spatialstack/models/SpatialStack-Qwen2.5-4B",
+  "model_name_sanitized": "models__SpatialStack-Qwen2.5-4B",
+  "system_instruction": null,
+  "system_instruction_sha": null,
+  "fewshot_as_multiturn": false,
+  "chat_template": null,
+  "chat_template_sha": null,
+  "start_time": 753546.155327026,
+  "end_time": 753712.145530018,
+  "total_evaluation_time_seconds": "165.99020299199037"
+}

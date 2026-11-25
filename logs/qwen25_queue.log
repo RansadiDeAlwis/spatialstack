@@ -1,0 +1,12 @@
+[qwen25] sanity ok Wed Nov 25 05:29:16 AM IST 2026
+[qwen25] cvbench try 1 Wed Nov 25 05:29:16 AM IST 2026
+[qwen25] cvbench done Wed Nov 25 05:46:46 AM IST 2026
+[qwen25] blink_spatial try 1 Wed Nov 25 05:46:46 AM IST 2026
+[qwen25] blink_spatial done Wed Nov 25 05:49:36 AM IST 2026
+[qwen25] sparbench try 1 Wed Nov 25 05:49:36 AM IST 2026
+[qwen25] sparbench non-OOM failure, see /home/anujaya/ransadi/SpatialStack/logs/eval_qwen25_sparbench.log Wed Nov 25 05:49:58 AM IST 2026
+[qwen25] mmsibench try 1 Wed Nov 25 05:49:58 AM IST 2026
+[qwen25] mmsibench done Wed Nov 25 05:55:04 AM IST 2026
+[qwen25] vsibench try 1 Wed Nov 25 05:55:04 AM IST 2026
+[qwen25] vsibench done Wed Nov 25 12:15:00 PM IST 2026
+[qwen25] ALL DONE Wed Nov 25 12:15:00 PM IST 2026

@@ -1,0 +1,8 @@
+env/
+env_qwen25/
+repo/
+data/
+*.safetensors
+*.bin
+*.pt
+__pycache__/

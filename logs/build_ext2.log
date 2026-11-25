@@ -1,0 +1,10 @@
+=== causal-conv1d 13:06:48
+Installing collected packages: causal_conv1d
+Successfully installed causal_conv1d-1.7.0
+=== flash_attn 13:09:09
+Installing collected packages: flash_attn
+Successfully installed flash_attn-2.8.3
+=== done 13:23:15
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+AttributeError: module 'fla' has no attribute '__version__'

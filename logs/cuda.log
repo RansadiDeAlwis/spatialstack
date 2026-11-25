@@ -1,0 +1,164 @@
+Channels:
+ - nvidia/label/cuda-12.9.1
+ - defaults
+Platform: linux-64
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /home/anujaya/ransadi/SpatialStack/env
+
+  added / updated specs:
+    - cuda-cccl
+    - cuda-cudart-dev
+    - cuda-libraries-dev
+    - cuda-nvcc
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    binutils_impl_linux-64-2.44|       h78f17ca_3         3.6 MB
+    binutils_linux-64-2.44     |       hc03a8fd_3          37 KB
+    cuda-cccl-12.9.27          |                0          17 KB  nvidia/label/cuda-12.9.1
+    cuda-cccl_linux-64-12.9.27 |       h06a4308_0         1.1 MB
+    cuda-crt-dev_linux-64-12.9.86|       h06a4308_0          91 KB
+    cuda-crt-tools-12.9.86     |       h06a4308_0          27 KB
+    cuda-cudart-12.9.79        |       h7354ed3_0          21 KB
+    cuda-cudart-dev-12.9.79    |       h7354ed3_0          22 KB
+    cuda-cudart-dev_linux-64-12.9.79|       hfb20e49_0         380 KB
+    cuda-cudart-static-12.9.79 |       h7354ed3_0          21 KB
+    cuda-cudart-static_linux-64-12.9.79|       hfb20e49_0         1.1 MB
+    cuda-cudart_linux-64-12.9.79|       hfb20e49_0         191 KB
+    cuda-driver-dev-12.9.79    |       h7354ed3_0          21 KB
+    cuda-driver-dev_linux-64-12.9.79|       hfb20e49_0          35 KB
+    cuda-libraries-dev-12.9.1  |                0          17 KB  nvidia/label/cuda-12.9.1
+    cuda-nvcc-12.9.86          |                0          17 KB  nvidia/label/cuda-12.9.1
+    cuda-nvcc-dev_linux-64-12.9.86|       he2511ca_0          26 KB
+    cuda-nvcc-impl-12.9.86     |       h521ac72_0          25 KB
+    cuda-nvcc-tools-12.9.86    |       hc86cbff_0        26.2 MB
+    cuda-nvcc_linux-64-12.9.86 |       hf461f41_0          25 KB
+    cuda-nvrtc-12.9.86         |       h7354ed3_0        64.1 MB
+    cuda-nvrtc-dev-12.9.86     |       h7354ed3_0          35 KB
+    cuda-nvvm-dev_linux-64-12.9.86|       h06a4308_0          25 KB
+    cuda-nvvm-impl-12.9.86     |       hd4f76de_0        20.4 MB
+    cuda-nvvm-tools-12.9.86    |       hd4f76de_0        23.1 MB
+    cuda-opencl-12.9.19        |       h6334c1c_0          28 KB
+    cuda-opencl-dev-12.9.19    |       h7354ed3_0          94 KB
+    cuda-profiler-api-12.9.79  |                0          19 KB  nvidia/label/cuda-12.9.1
+    cuda-version-12.9          |       h9deaac8_3          22 KB
+    gcc_impl_linux-64-14.3.0   |       h4943218_4        68.5 MB
+    gcc_linux-64-14.3.0        |      hda73cce_16          32 KB
+    gxx_impl_linux-64-14.3.0   |       he634eba_4        14.4 MB
+    gxx_linux-64-14.3.0        |      hca8765c_16          30 KB
+    kernel-headers_linux-64-4.18.0|       h3108a97_2         1.2 MB
+    libcublas-12.9.1.4         |                0       446.3 MB  nvidia/label/cuda-12.9.1
+    libcublas-dev-12.9.1.4     |                0          86 KB  nvidia/label/cuda-12.9.1
+    libcufft-11.4.1.4          |       h7354ed3_0       154.6 MB
+    libcufft-dev-11.4.1.4      |       h7354ed3_0          33 KB
+    libcufile-1.14.1.1         |       h369afae_0         948 KB
+    libcufile-dev-1.14.1.1     |       h7354ed3_0          34 KB
+    libcurand-10.3.10.19       |       h7354ed3_0        44.1 MB
+    libcurand-dev-10.3.10.19   |       h7354ed3_0         246 KB
+    libcusolver-11.7.5.82      |       h13f4c66_0       195.6 MB
+    libcusolver-dev-11.7.5.82  |       h7354ed3_0          58 KB
+    libcusparse-12.5.10.65     |       h41c5c2b_0       199.2 MB
+    libcusparse-dev-12.5.10.65 |       h41c5c2b_0          50 KB
+    libgcc-devel_linux-64-14.3.0|     he7458c1_104         2.6 MB
+    libgomp-15.2.0             |       h4751f2c_8         437 KB
+    libnl-3.11.0               |       hb25bd0a_0         797 KB
+    libnpp-12.4.1.87           |       h7354ed3_0       167.5 MB
+    libnpp-dev-12.4.1.87       |       h7354ed3_0         444 KB
+    libnvfatbin-12.9.82        |       h7354ed3_0         798 KB
+    libnvfatbin-dev-12.9.82    |       h7354ed3_0          25 KB
+    libnvjitlink-12.9.86       |       h7354ed3_0        29.1 MB
+    libnvjitlink-dev-12.9.86   |       h7354ed3_0          25 KB
+    libnvjpeg-12.4.0.76        |       h7354ed3_0         3.4 MB
+    libnvjpeg-dev-12.4.0.76    |       h06a4308_0          30 KB
+    libnvptxcompiler-dev-12.9.86|       h06a4308_0          25 KB
+    libnvptxcompiler-dev_linux-64-12.9.86|       h06a4308_0        13.7 MB
+    libsanitizer-14.3.0        |       hd4faa28_4         4.9 MB
+    libstdcxx-devel_linux-64-14.3.0|     he7458c1_104        13.9 MB
+    libstdcxx-ng-15.2.0        |       hc03a8fd_8          28 KB
+    ocl-icd-2.3.4              |       h47b2149_0         106 KB
+    opencl-headers-2026.05.29  |       hfb20e49_0          54 KB
+    rdma-core-65.0             |       heabd6c6_0         1.3 MB
+    sysroot_linux-64-2.28      |       h3108a97_2        23.3 MB
+    ------------------------------------------------------------
+                                           Total:        1.49 GB
+
+The following NEW packages will be INSTALLED:
+
+  binutils_impl_lin~ pkgs/main/linux-64::binutils_impl_linux-64-2.44-h78f17ca_3 
+  binutils_linux-64  pkgs/main/linux-64::binutils_linux-64-2.44-hc03a8fd_3 
+  cuda-cccl          nvidia/label/cuda-12.9.1/linux-64::cuda-cccl-12.9.27-0 
+  cuda-cccl_linux-64 pkgs/main/noarch::cuda-cccl_linux-64-12.9.27-h06a4308_0 
+  cuda-crt-dev_linu~ pkgs/main/noarch::cuda-crt-dev_linux-64-12.9.86-h06a4308_0 
+  cuda-crt-tools     pkgs/main/linux-64::cuda-crt-tools-12.9.86-h06a4308_0 
+  cuda-cudart        pkgs/main/linux-64::cuda-cudart-12.9.79-h7354ed3_0 
+  cuda-cudart-dev    pkgs/main/linux-64::cuda-cudart-dev-12.9.79-h7354ed3_0 
+  cuda-cudart-dev_l~ pkgs/main/noarch::cuda-cudart-dev_linux-64-12.9.79-hfb20e49_0 
+  cuda-cudart-static pkgs/main/linux-64::cuda-cudart-static-12.9.79-h7354ed3_0 
+  cuda-cudart-stati~ pkgs/main/noarch::cuda-cudart-static_linux-64-12.9.79-hfb20e49_0 
+  cuda-cudart_linux~ pkgs/main/noarch::cuda-cudart_linux-64-12.9.79-hfb20e49_0 
+  cuda-driver-dev    pkgs/main/linux-64::cuda-driver-dev-12.9.79-h7354ed3_0 
+  cuda-driver-dev_l~ pkgs/main/noarch::cuda-driver-dev_linux-64-12.9.79-hfb20e49_0 
+  cuda-libraries-dev nvidia/label/cuda-12.9.1/linux-64::cuda-libraries-dev-12.9.1-0 
+  cuda-nvcc          nvidia/label/cuda-12.9.1/linux-64::cuda-nvcc-12.9.86-0 
+  cuda-nvcc-dev_lin~ pkgs/main/noarch::cuda-nvcc-dev_linux-64-12.9.86-he2511ca_0 
+  cuda-nvcc-impl     pkgs/main/linux-64::cuda-nvcc-impl-12.9.86-h521ac72_0 
+  cuda-nvcc-tools    pkgs/main/linux-64::cuda-nvcc-tools-12.9.86-hc86cbff_0 
+  cuda-nvcc_linux-64 pkgs/main/linux-64::cuda-nvcc_linux-64-12.9.86-hf461f41_0 
+  cuda-nvrtc         pkgs/main/linux-64::cuda-nvrtc-12.9.86-h7354ed3_0 
+  cuda-nvrtc-dev     pkgs/main/linux-64::cuda-nvrtc-dev-12.9.86-h7354ed3_0 
+  cuda-nvvm-dev_lin~ pkgs/main/noarch::cuda-nvvm-dev_linux-64-12.9.86-h06a4308_0 
+  cuda-nvvm-impl     pkgs/main/linux-64::cuda-nvvm-impl-12.9.86-hd4f76de_0 
+  cuda-nvvm-tools    pkgs/main/linux-64::cuda-nvvm-tools-12.9.86-hd4f76de_0 
+  cuda-opencl        pkgs/main/linux-64::cuda-opencl-12.9.19-h6334c1c_0 
+  cuda-opencl-dev    pkgs/main/linux-64::cuda-opencl-dev-12.9.19-h7354ed3_0 
+  cuda-profiler-api  nvidia/label/cuda-12.9.1/linux-64::cuda-profiler-api-12.9.79-0 
+  cuda-version       pkgs/main/noarch::cuda-version-12.9-h9deaac8_3 
+  gcc_impl_linux-64  pkgs/main/linux-64::gcc_impl_linux-64-14.3.0-h4943218_4 
+  gcc_linux-64       pkgs/main/linux-64::gcc_linux-64-14.3.0-hda73cce_16 
+  gxx_impl_linux-64  pkgs/main/linux-64::gxx_impl_linux-64-14.3.0-he634eba_4 
+  gxx_linux-64       pkgs/main/linux-64::gxx_linux-64-14.3.0-hca8765c_16 
+  kernel-headers_li~ pkgs/main/noarch::kernel-headers_linux-64-4.18.0-h3108a97_2 
+  libcublas          nvidia/label/cuda-12.9.1/linux-64::libcublas-12.9.1.4-0 
+  libcublas-dev      nvidia/label/cuda-12.9.1/linux-64::libcublas-dev-12.9.1.4-0 
+  libcufft           pkgs/main/linux-64::libcufft-11.4.1.4-h7354ed3_0 
+  libcufft-dev       pkgs/main/linux-64::libcufft-dev-11.4.1.4-h7354ed3_0 
+  libcufile          pkgs/main/linux-64::libcufile-1.14.1.1-h369afae_0 
+  libcufile-dev      pkgs/main/linux-64::libcufile-dev-1.14.1.1-h7354ed3_0 
+  libcurand          pkgs/main/linux-64::libcurand-10.3.10.19-h7354ed3_0 
+  libcurand-dev      pkgs/main/linux-64::libcurand-dev-10.3.10.19-h7354ed3_0 
+  libcusolver        pkgs/main/linux-64::libcusolver-11.7.5.82-h13f4c66_0 
+  libcusolver-dev    pkgs/main/linux-64::libcusolver-dev-11.7.5.82-h7354ed3_0 
+  libcusparse        pkgs/main/linux-64::libcusparse-12.5.10.65-h41c5c2b_0 
+  libcusparse-dev    pkgs/main/linux-64::libcusparse-dev-12.5.10.65-h41c5c2b_0 
+  libgcc-devel_linu~ pkgs/main/noarch::libgcc-devel_linux-64-14.3.0-he7458c1_104 
+  libgomp            pkgs/main/linux-64::libgomp-15.2.0-h4751f2c_8 
+  libnl              pkgs/main/linux-64::libnl-3.11.0-hb25bd0a_0 
+  libnpp             pkgs/main/linux-64::libnpp-12.4.1.87-h7354ed3_0 
+  libnpp-dev         pkgs/main/linux-64::libnpp-dev-12.4.1.87-h7354ed3_0 
+  libnvfatbin        pkgs/main/linux-64::libnvfatbin-12.9.82-h7354ed3_0 
+  libnvfatbin-dev    pkgs/main/linux-64::libnvfatbin-dev-12.9.82-h7354ed3_0 
+  libnvjitlink       pkgs/main/linux-64::libnvjitlink-12.9.86-h7354ed3_0 
+  libnvjitlink-dev   pkgs/main/linux-64::libnvjitlink-dev-12.9.86-h7354ed3_0 
+  libnvjpeg          pkgs/main/linux-64::libnvjpeg-12.4.0.76-h7354ed3_0 
+  libnvjpeg-dev      pkgs/main/linux-64::libnvjpeg-dev-12.4.0.76-h06a4308_0 
+  libnvptxcompiler-~ pkgs/main/linux-64::libnvptxcompiler-dev-12.9.86-h06a4308_0 
+  libnvptxcompiler-~ pkgs/main/noarch::libnvptxcompiler-dev_linux-64-12.9.86-h06a4308_0 
+  libsanitizer       pkgs/main/linux-64::libsanitizer-14.3.0-hd4faa28_4 
+  libstdcxx-devel_l~ pkgs/main/noarch::libstdcxx-devel_linux-64-14.3.0-he7458c1_104 
+  libstdcxx-ng       pkgs/main/linux-64::libstdcxx-ng-15.2.0-hc03a8fd_8 
+  ocl-icd            pkgs/main/linux-64::ocl-icd-2.3.4-h47b2149_0 
+  opencl-headers     pkgs/main/linux-64::opencl-headers-2026.05.29-hfb20e49_0 
+  rdma-core          pkgs/main/linux-64::rdma-core-65.0-heabd6c6_0 
+  sysroot_linux-64   pkgs/main/noarch::sysroot_linux-64-2.28-h3108a97_2 
+
+
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done

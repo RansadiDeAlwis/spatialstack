@@ -1,0 +1,172 @@
+[INFO] cuda_home=/home/anujaya/ransadi/SpatialStack/env
+[INFO] hf_home=/home/anujaya/ransadi/SpatialStack/repo/cache/hf-home
+[INFO] hf_hub_cache=/home/anujaya/ransadi/SpatialStack/repo/cache/hub
+[INFO] hf_datasets_cache=/home/anujaya/ransadi/SpatialStack/repo/cache/datasets
+[INFO] triton_cache_dir=/tmp/anujaya/spatialstack-triton/manual/0
+[32m2026-11-25 05:25:32.418 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m335[0m - [1mVerbosity set to INFO[0m
+[32m2026-11-25 05:25:32.497 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m423[0m - [1mEvaluation tracker args: {'output_path': '/home/anujaya/ransadi/SpatialStack/results/qwen25_limit4/cvbench'}[0m
+[32m2026-11-25 05:25:32.497 +05:30[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m445[0m - [33m[1m --limit SHOULD ONLY BE USED FOR TESTING.REAL METRICS SHOULD NOT BE COMPUTED USING LIMIT.[0m
+[32m2026-11-25 05:25:32.497 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m514[0m - [1mSelected Tasks: ['cvbench'][0m
+[32m2026-11-25 05:25:32.499 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36msimple_evaluate[0m:[36m155[0m - [1mSetting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234[0m
+Traceback (most recent call last):
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 470, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/api/task.py", line 1052, in download
+    self.dataset = datasets.load_dataset(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env_qwen25/lib/python3.12/site-packages/datasets/load.py", line 2062, in load_dataset
+    builder_instance = load_dataset_builder(
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env_qwen25/lib/python3.12/site-packages/datasets/load.py", line 1819, in load_dataset_builder
+    builder_instance: DatasetBuilder = builder_cls(
+                                       ^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env_qwen25/lib/python3.12/site-packages/datasets/builder.py", line 395, in __init__
+    self.info = DatasetInfo.from_directory(self._cache_dir)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env_qwen25/lib/python3.12/site-packages/datasets/info.py", line 279, in from_directory
+    return cls.from_dict(dataset_info_dict)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env_qwen25/lib/python3.12/site-packages/datasets/info.py", line 284, in from_dict
+    return cls(**{k: v for k, v in dataset_info_dict.items() if k in field_names})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 20, in __init__
+  File "/home/anujaya/ransadi/SpatialStack/env_qwen25/lib/python3.12/site-packages/datasets/info.py", line 170, in __post_init__
+    self.features = Features.from_dict(self.features)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env_qwen25/lib/python3.12/site-packages/datasets/features/features.py", line 1888, in from_dict
+    obj = generate_from_dict(dic)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env_qwen25/lib/python3.12/site-packages/datasets/features/features.py", line 1468, in generate_from_dict
+    return {key: generate_from_dict(value) for key, value in obj.items()}
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env_qwen25/lib/python3.12/site-packages/datasets/features/features.py", line 1474, in generate_from_dict
+    raise ValueError(f"Feature type '{_type}' not found. Available feature types: {list(_FEATURE_TYPES.keys())}")
+ValueError: Feature type 'List' not found. Available feature types: ['Value', 'ClassLabel', 'Translation', 'TranslationVariableLanguages', 'LargeList', 'Sequence', 'Array2D', 'Array3D', 'Array4D', 'Array5D', 'Audio', 'Image', 'Video', 'Pdf']
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/__main__.py", line 375, in cli_evaluate
+    results, samples = cli_evaluate_single(args)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/__main__.py", line 520, in cli_evaluate_single
+    results = evaluator.simple_evaluate(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/utils.py", line 533, in _wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/evaluator.py", line 171, in simple_evaluate
+    task_dict = get_task_dict(tasks, task_manager)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/tasks/__init__.py", line 558, in get_task_dict
+    task_name_from_string_dict = task_manager.load_task_or_group(
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/tasks/__init__.py", line 372, in load_task_or_group
+    all_loaded_tasks = dict(collections.ChainMap(*map(self._load_individual_task_or_group, task_list)))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/tasks/__init__.py", line 289, in _load_individual_task_or_group
+    return _load_task(task_config, task=name_or_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/tasks/__init__.py", line 259, in _load_task
+    task_object = ConfigurableTask(config=config, model_name=self.model_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/api/task.py", line 720, in __init__
+    self.download(self.config.dataset_kwargs)
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 330, in wrapped_f
+    return self(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 467, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 368, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 411, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x7d842c9bbfb0 state=finished raised ValueError>]
+[32m2026-11-25 05:25:50.500 +05:30[0m | [31m[1mERROR   [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m394[0m - [31m[1mError during evaluation: RetryError[<Future at 0x7d842c9bbfb0 state=finished raised ValueError>]. Please set `--verbosity=DEBUG` to get more information.[0m
+[32m2026-11-25 05:25:53.982 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m335[0m - [1mVerbosity set to INFO[0m
+[32m2026-11-25 05:25:54.054 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m423[0m - [1mEvaluation tracker args: {'output_path': '/home/anujaya/ransadi/SpatialStack/results/qwen25_limit4/vsibench'}[0m
+[32m2026-11-25 05:25:54.054 +05:30[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m445[0m - [33m[1m --limit SHOULD ONLY BE USED FOR TESTING.REAL METRICS SHOULD NOT BE COMPUTED USING LIMIT.[0m
+[32m2026-11-25 05:25:54.054 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m514[0m - [1mSelected Tasks: ['vsibench'][0m
+[32m2026-11-25 05:25:54.055 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36msimple_evaluate[0m:[36m155[0m - [1mSetting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234[0m
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files: 100%|██████████| 10/10 [00:00<00:00, 6027.16it/s]
+Traceback (most recent call last):
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 470, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/api/task.py", line 1052, in download
+    self.dataset = datasets.load_dataset(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env_qwen25/lib/python3.12/site-packages/datasets/load.py", line 2062, in load_dataset
+    builder_instance = load_dataset_builder(
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env_qwen25/lib/python3.12/site-packages/datasets/load.py", line 1819, in load_dataset_builder
+    builder_instance: DatasetBuilder = builder_cls(
+                                       ^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env_qwen25/lib/python3.12/site-packages/datasets/builder.py", line 395, in __init__
+    self.info = DatasetInfo.from_directory(self._cache_dir)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env_qwen25/lib/python3.12/site-packages/datasets/info.py", line 279, in from_directory
+    return cls.from_dict(dataset_info_dict)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env_qwen25/lib/python3.12/site-packages/datasets/info.py", line 284, in from_dict
+    return cls(**{k: v for k, v in dataset_info_dict.items() if k in field_names})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 20, in __init__
+  File "/home/anujaya/ransadi/SpatialStack/env_qwen25/lib/python3.12/site-packages/datasets/info.py", line 170, in __post_init__
+    self.features = Features.from_dict(self.features)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env_qwen25/lib/python3.12/site-packages/datasets/features/features.py", line 1888, in from_dict
+    obj = generate_from_dict(dic)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env_qwen25/lib/python3.12/site-packages/datasets/features/features.py", line 1468, in generate_from_dict
+    return {key: generate_from_dict(value) for key, value in obj.items()}
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env_qwen25/lib/python3.12/site-packages/datasets/features/features.py", line 1474, in generate_from_dict
+    raise ValueError(f"Feature type '{_type}' not found. Available feature types: {list(_FEATURE_TYPES.keys())}")
+ValueError: Feature type 'List' not found. Available feature types: ['Value', 'ClassLabel', 'Translation', 'TranslationVariableLanguages', 'LargeList', 'Sequence', 'Array2D', 'Array3D', 'Array4D', 'Array5D', 'Audio', 'Image', 'Video', 'Pdf']
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/__main__.py", line 375, in cli_evaluate
+    results, samples = cli_evaluate_single(args)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/__main__.py", line 520, in cli_evaluate_single
+    results = evaluator.simple_evaluate(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/utils.py", line 533, in _wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/evaluator.py", line 171, in simple_evaluate
+    task_dict = get_task_dict(tasks, task_manager)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/tasks/__init__.py", line 558, in get_task_dict
+    task_name_from_string_dict = task_manager.load_task_or_group(
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/tasks/__init__.py", line 372, in load_task_or_group
+    all_loaded_tasks = dict(collections.ChainMap(*map(self._load_individual_task_or_group, task_list)))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/tasks/__init__.py", line 289, in _load_individual_task_or_group
+    return _load_task(task_config, task=name_or_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/tasks/__init__.py", line 259, in _load_task
+    task_object = ConfigurableTask(config=config, model_name=self.model_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/api/task.py", line 720, in __init__
+    self.download(self.config.dataset_kwargs)
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 330, in wrapped_f
+    return self(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 467, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 368, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 411, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x7a4e4377ec00 state=finished raised ValueError>]
+[32m2026-11-25 05:26:12.002 +05:30[0m | [31m[1mERROR   [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m394[0m - [31m[1mError during evaluation: RetryError[<Future at 0x7a4e4377ec00 state=finished raised ValueError>]. Please set `--verbosity=DEBUG` to get more information.[0m

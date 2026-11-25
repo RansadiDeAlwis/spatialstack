@@ -1,0 +1,64 @@
+[INFO] cuda_home=/home/anujaya/ransadi/SpatialStack/env
+[INFO] hf_home=/home/anujaya/ransadi/SpatialStack/repo/cache/hf-home
+[INFO] hf_hub_cache=/home/anujaya/ransadi/SpatialStack/repo/cache/hub
+[INFO] hf_datasets_cache=/home/anujaya/ransadi/SpatialStack/repo/cache/datasets
+[INFO] triton_cache_dir=/tmp/anujaya/spatialstack-triton/manual/0
+[32m2026-11-25 03:42:43.206 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m335[0m - [1mVerbosity set to INFO[0m
+[32m2026-11-25 03:42:43.279 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m423[0m - [1mEvaluation tracker args: {'output_path': '/home/anujaya/ransadi/SpatialStack/results/qwen25_limit4/cvbench'}[0m
+[32m2026-11-25 03:42:43.279 +05:30[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m445[0m - [33m[1m --limit SHOULD ONLY BE USED FOR TESTING.REAL METRICS SHOULD NOT BE COMPUTED USING LIMIT.[0m
+[32m2026-11-25 03:42:43.279 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m514[0m - [1mSelected Tasks: ['cvbench'][0m
+[32m2026-11-25 03:42:43.280 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36msimple_evaluate[0m:[36m155[0m - [1mSetting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234[0m
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[32m2026-11-25 03:42:46.524 +05:30[0m | [31m[1mERROR   [0m | [36mlmms_eval.models[0m:[36mget_model[0m:[36m63[0m - [31m[1mFailed to import SpatialStack from spatialstack: cannot import name 'SlidingWindowCache' from 'transformers.cache_utils' (/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/transformers/cache_utils.py)[0m
+Traceback (most recent call last):
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/__main__.py", line 375, in cli_evaluate
+    results, samples = cli_evaluate_single(args)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/__main__.py", line 520, in cli_evaluate_single
+    results = evaluator.simple_evaluate(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/utils.py", line 533, in _wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/evaluator.py", line 176, in simple_evaluate
+    lm = lmms_eval.models.get_model(model).create_from_arg_string(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/models/__init__.py", line 60, in get_model
+    module = __import__(f"lmms_eval.models.{model_name}", fromlist=[model_class])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/models/spatialstack.py", line 26, in <module>
+    from qwen_vl.model.modeling_qwen2_5_vl import Qwen2_5_VLForConditionalGenerationWithVGGT
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/qwen_vl/model/modeling_qwen2_5_vl.py", line 38, in <module>
+    from transformers.cache_utils import Cache, DynamicCache, SlidingWindowCache, StaticCache
+ImportError: cannot import name 'SlidingWindowCache' from 'transformers.cache_utils' (/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/transformers/cache_utils.py)
+[32m2026-11-25 03:42:46.577 +05:30[0m | [31m[1mERROR   [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m394[0m - [31m[1mError during evaluation: cannot import name 'SlidingWindowCache' from 'transformers.cache_utils' (/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/transformers/cache_utils.py). Please set `--verbosity=DEBUG` to get more information.[0m
+[32m2026-11-25 03:42:50.610 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m335[0m - [1mVerbosity set to INFO[0m
+[32m2026-11-25 03:42:50.674 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m423[0m - [1mEvaluation tracker args: {'output_path': '/home/anujaya/ransadi/SpatialStack/results/qwen25_limit4/vsibench'}[0m
+[32m2026-11-25 03:42:50.674 +05:30[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m445[0m - [33m[1m --limit SHOULD ONLY BE USED FOR TESTING.REAL METRICS SHOULD NOT BE COMPUTED USING LIMIT.[0m
+[32m2026-11-25 03:42:50.674 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m514[0m - [1mSelected Tasks: ['vsibench'][0m
+[32m2026-11-25 03:42:50.675 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36msimple_evaluate[0m:[36m155[0m - [1mSetting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234[0m
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files: 100%|██████████| 10/10 [00:00<00:00, 2589.56it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[32m2026-11-25 03:42:54.049 +05:30[0m | [31m[1mERROR   [0m | [36mlmms_eval.models[0m:[36mget_model[0m:[36m63[0m - [31m[1mFailed to import SpatialStack from spatialstack: cannot import name 'SlidingWindowCache' from 'transformers.cache_utils' (/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/transformers/cache_utils.py)[0m
+Traceback (most recent call last):
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/__main__.py", line 375, in cli_evaluate
+    results, samples = cli_evaluate_single(args)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/__main__.py", line 520, in cli_evaluate_single
+    results = evaluator.simple_evaluate(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/utils.py", line 533, in _wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/evaluator.py", line 176, in simple_evaluate
+    lm = lmms_eval.models.get_model(model).create_from_arg_string(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/models/__init__.py", line 60, in get_model
+    module = __import__(f"lmms_eval.models.{model_name}", fromlist=[model_class])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/models/spatialstack.py", line 26, in <module>
+    from qwen_vl.model.modeling_qwen2_5_vl import Qwen2_5_VLForConditionalGenerationWithVGGT
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/qwen_vl/model/modeling_qwen2_5_vl.py", line 38, in <module>
+    from transformers.cache_utils import Cache, DynamicCache, SlidingWindowCache, StaticCache
+ImportError: cannot import name 'SlidingWindowCache' from 'transformers.cache_utils' (/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/transformers/cache_utils.py)
+[32m2026-11-25 03:42:54.103 +05:30[0m | [31m[1mERROR   [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m394[0m - [31m[1mError during evaluation: cannot import name 'SlidingWindowCache' from 'transformers.cache_utils' (/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/transformers/cache_utils.py). Please set `--verbosity=DEBUG` to get more information.[0m

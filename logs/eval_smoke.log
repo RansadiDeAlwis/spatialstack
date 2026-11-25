@@ -1,0 +1,756 @@
+[INFO] cuda_home=/home/anujaya/ransadi/SpatialStack/env
+[INFO] hf_home=/home/anujaya/ransadi/SpatialStack/repo/cache/hf-home
+[INFO] hf_hub_cache=/home/anujaya/ransadi/SpatialStack/repo/cache/hub
+[INFO] hf_datasets_cache=/home/anujaya/ransadi/SpatialStack/repo/cache/datasets
+[INFO] triton_cache_dir=/tmp/anujaya/spatialstack-triton/manual/0
+[32m2026-11-24 13:26:22.610 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m335[0m - [1mVerbosity set to INFO[0m
+[32m2026-11-24 13:26:22.675 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m423[0m - [1mEvaluation tracker args: {'output_path': '/home/anujaya/ransadi/SpatialStack/results/spatialstack_limit8/vsibench'}[0m
+[32m2026-11-24 13:26:22.675 +05:30[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m445[0m - [33m[1m --limit SHOULD ONLY BE USED FOR TESTING.REAL METRICS SHOULD NOT BE COMPUTED USING LIMIT.[0m
+[32m2026-11-24 13:26:22.675 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m514[0m - [1mSelected Tasks: ['vsibench'][0m
+[32m2026-11-24 13:26:22.676 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36msimple_evaluate[0m:[36m155[0m - [1mSetting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234[0m
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files: 100%|██████████| 10/10 [00:00<00:00, 2839.94it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Generating test split:   0%|          | 0/5130 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 5130/5130 [00:00<00:00, 288451.88 examples/s]
+Loading weights:   0%|          | 0/724 [00:00<?, ?it/s]Loading weights:   0%|          | 1/724 [00:00<04:31,  2.66it/s]Loading weights:   4%|▍         | 28/724 [00:00<00:09, 76.25it/s]Loading weights:   9%|▉         | 65/724 [00:00<00:04, 159.07it/s]Loading weights:  13%|█▎        | 96/724 [00:00<00:03, 199.93it/s]Loading weights:  18%|█▊        | 133/724 [00:00<00:02, 245.00it/s]Loading weights:  23%|██▎       | 166/724 [00:00<00:02, 265.24it/s]Loading weights:  28%|██▊       | 201/724 [00:00<00:01, 284.79it/s]Loading weights:  33%|███▎      | 237/724 [00:01<00:01, 305.60it/s]Loading weights:  37%|███▋      | 270/724 [00:01<00:01, 306.60it/s]Loading weights:  42%|████▏     | 306/724 [00:01<00:01, 319.65it/s]Loading weights:  47%|████▋     | 340/724 [00:01<00:01, 316.86it/s]Loading weights:  52%|█████▏    | 373/724 [00:01<00:01, 312.63it/s]Loading weights:  57%|█████▋    | 412/724 [00:01<00:00, 330.49it/s]Loading weights:  65%|██████▌   | 472/724 [00:01<00:00, 406.43it/s]Loading weights:  79%|███████▉  | 575/724 [00:01<00:00, 586.25it/s]Loading weights:  95%|█████████▌| 691/724 [00:01<00:00, 751.47it/s]Loading weights: 100%|██████████| 724/724 [00:01<00:00, 365.71it/s]
+The tied weights mapping and config for this model specifies to tie model.language_model.embed_tokens.weight to lm_head.weight, but both are present in the checkpoints, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning
+[1mQwen3_5ForConditionalGenerationWithGeometry LOAD REPORT[0m from: Journey9ni/SpatialStack-Qwen3.5-4B
+Key                                                                                 | Status     |  | 
+------------------------------------------------------------------------------------+------------+--+-
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.mlp.fc2.bias           | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.norm1.weight           | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.ls1.gamma              | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.mlp.fc2.weight         | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.norm1.weight          | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.mlp.fc1.weight   | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.attn.qkv.bias    | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.q_norm.bias      | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.mlp.fc2.bias     | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.mlp.fc2.weight               | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.mlp.fc2.bias           | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.norm2.bias                   | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.k_norm.bias      | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.proj.bias        | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.k_norm.weight          | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.norm1.bias            | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.proj.bias         | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.norm1.weight                 | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.ls2.gamma             | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.ls1.gamma             | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.q_norm.bias            | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.attn.proj.weight | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.proj.weight      | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.q_norm.weight          | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.norm2.weight                 | UNEXPECTED |  | 
+model.language_feature_fusion.fusion_layers.{0, 1, 2}.0.geo_mlp.{0, 2}.bias         | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.norm2.bias            | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.mlp.fc2.weight        | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.attn.qkv.weight        | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.qkv.bias                | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.k_norm.weight     | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.mlp.fc1.weight         | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.mlp.fc1.bias           | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.norm2.weight                | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.qkv.bias          | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.qkv.weight        | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.attn.proj.bias         | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.norm2.bias             | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.mlp.fc1.bias           | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.attn.qkv.weight  | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.qkv.weight             | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.mlp.fc2.weight         | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.norm2.bias             | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.attn.qkv.bias          | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.mlp.fc2.weight              | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.norm1.bias             | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.ls2.gamma              | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.proj.bias               | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.mlp.fc1.weight              | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.attn.proj.weight       | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.k_norm.weight    | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.norm2.weight          | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.ls2.gamma                   | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.q_norm.weight    | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.k_norm.weight           | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.ls1.gamma              | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.qkv.bias         | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.ls1.gamma                    | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.mlp.fc2.bias                | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.mlp.fc2.bias                 | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.norm2.weight           | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.k_norm.bias            | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.norm1.weight     | UNEXPECTED |  | 
+model.language_feature_fusion.fusion_layers.{0, 1, 2}.0.geo_ln.weight               | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.ls2.gamma        | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.norm1.bias       | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.attn.proj.bias   | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.mlp.fc1.weight        | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.mlp.fc1.bias                | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.norm1.weight                | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.norm2.weight           | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.k_norm.bias       | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.q_norm.bias             | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.mlp.fc2.bias          | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.q_norm.bias       | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.mlp.fc1.weight         | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.mlp.fc1.bias                 | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.proj.weight       | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.norm2.weight     | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.mlp.fc1.weight               | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.ls2.gamma              | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.qkv.weight              | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.qkv.bias               | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.ls1.gamma        | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.proj.weight            | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.norm2.bias       | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.ls1.gamma                   | UNEXPECTED |  | 
+model.language_feature_fusion.fusion_layers.{0, 1, 2}.0.geo_mlp.{0, 2}.weight       | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.proj.bias              | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.mlp.fc1.bias     | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.mlp.fc1.bias          | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.norm2.bias                  | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.ls2.gamma                    | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.proj.weight             | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.norm1.bias                  | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.norm1.weight           | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.q_norm.weight     | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.q_norm.weight           | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.mlp.fc2.weight   | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.norm.bias                        | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.norm1.bias             | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.norm1.bias                   | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.qkv.weight       | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.k_norm.bias             | UNEXPECTED |  | 
+language_feature_fusion.fusion_layers.{0, 1, 2}.0.geo_mlp.{0, 2}.weight             | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.patch_embed.proj.bias            | UNEXPECTED |  | 
+model.language_feature_fusion.fusion_layers.{0, 1, 2}.0.geo_ln.bias                 | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.register_token                               | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.norm.weight                      | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.patch_embed.proj.bias                  | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.cls_token                              | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.pos_embed                              | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.norm.weight                            | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.mask_token                             | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.norm.bias                              | UNEXPECTED |  | 
+language_feature_fusion.fusion_layers.{0, 1, 2}.0.geo_ln.weight                     | UNEXPECTED |  | 
+language_feature_fusion.fusion_layers.{0, 1, 2}.0.geo_ln.bias                       | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.patch_embed.proj.weight                | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.cls_token                        | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.register_token                                     | UNEXPECTED |  | 
+language_feature_fusion.fusion_layers.{0, 1, 2}.0.geo_mlp.{0, 2}.bias               | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.camera_token                                 | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.mask_token                       | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.register_tokens                        | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.register_tokens                  | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.pos_embed                        | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.camera_token                                       | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.patch_embed.proj.weight          | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+Warning: FlashAttention 3 is not available, falling back to PyTorch's scaled_dot_product_attention
+[32m2026-11-24 13:27:00.540 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.evaluator_utils[0m:[36mfrom_taskdict[0m:[36m91[0m - [1mNo metadata found in task config for vsibench, using default n_shot=0[0m
+[32m2026-11-24 13:27:00.541 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m425[0m - [1mBuilding contexts for vsibench on rank 0...[0m
+  0%|          | 0/8 [00:00<?, ?it/s]100%|██████████| 8/8 [00:00<00:00, 20152.81it/s]
+[32m2026-11-24 13:27:00.541 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36mevaluate[0m:[36m447[0m - [1mRunning generate_until requests[0m
+Model Responding:   0%|          | 0/8 [00:00<?, ?it/s]The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Traceback (most recent call last):
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/__main__.py", line 375, in cli_evaluate
+    results, samples = cli_evaluate_single(args)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/__main__.py", line 520, in cli_evaluate_single
+    results = evaluator.simple_evaluate(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/utils.py", line 533, in _wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/evaluator.py", line 248, in simple_evaluate
+    results = evaluate(
+              ^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/utils.py", line 533, in _wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/evaluator.py", line 458, in evaluate
+    resps = getattr(lm, reqtype)(cloned_reqs)  # Choiszt run generate until
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/models/qwen3_5.py", line 429, in generate_until
+    output_ids = self.model.generate(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/transformers/generation/utils.py", line 2535, in generate
+    result = decoding_method(
+             ^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/transformers/generation/utils.py", line 2728, in _sample
+    outputs = self._prefill(
+              ^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/transformers/generation/utils.py", line 3776, in _prefill
+    return self(**model_inputs, return_dict=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/qwen_vl/model/modeling_qwen3_5.py", line 823, in forward
+    outputs = self.model(
+              ^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/qwen_vl/model/modeling_qwen3_5.py", line 664, in forward
+    image_outputs = self.get_image_features(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/transformers/utils/generic.py", line 843, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py", line 1618, in get_image_features
+    pixel_values = pixel_values.type(self.visual.dtype)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 114.00 MiB. GPU 0 has a total capacity of 47.37 GiB of which 88.81 MiB is free. Process 2476667 has 28.83 GiB memory in use. Process 2498505 has 4.27 GiB memory in use. Including non-PyTorch memory, this process has 14.11 GiB memory in use. Of the allocated memory 13.62 GiB is allocated by PyTorch, and 6.16 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[32m2026-11-24 13:27:01.669 +05:30[0m | [31m[1mERROR   [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m394[0m - [31m[1mError during evaluation: CUDA out of memory. Tried to allocate 114.00 MiB. GPU 0 has a total capacity of 47.37 GiB of which 88.81 MiB is free. Process 2476667 has 28.83 GiB memory in use. Process 2498505 has 4.27 GiB memory in use. Including non-PyTorch memory, this process has 14.11 GiB memory in use. Of the allocated memory 13.62 GiB is allocated by PyTorch, and 6.16 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables). Please set `--verbosity=DEBUG` to get more information.[0m
+Model Responding:   0%|          | 0/8 [00:01<?, ?it/s]
+[32m2026-11-24 13:27:06.256 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m335[0m - [1mVerbosity set to INFO[0m
+[32m2026-11-24 13:27:06.325 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m423[0m - [1mEvaluation tracker args: {'output_path': '/home/anujaya/ransadi/SpatialStack/results/spatialstack_limit8/cvbench'}[0m
+[32m2026-11-24 13:27:06.325 +05:30[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m445[0m - [33m[1m --limit SHOULD ONLY BE USED FOR TESTING.REAL METRICS SHOULD NOT BE COMPUTED USING LIMIT.[0m
+[32m2026-11-24 13:27:06.325 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m514[0m - [1mSelected Tasks: ['cvbench'][0m
+[32m2026-11-24 13:27:06.326 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36msimple_evaluate[0m:[36m155[0m - [1mSetting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234[0m
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Generating test split:   0%|          | 0/2638 [00:00<?, ? examples/s]Generating test split:  34%|███▍      | 900/2638 [00:00<00:00, 6988.09 examples/s]Generating test split:  77%|███████▋  | 2038/2638 [00:00<00:00, 7776.86 examples/s]Generating test split: 100%|██████████| 2638/2638 [00:00<00:00, 7758.30 examples/s]
+Loading weights:   0%|          | 0/724 [00:00<?, ?it/s]Loading weights:   0%|          | 1/724 [00:00<04:27,  2.70it/s]Loading weights:   6%|▌         | 41/724 [00:00<00:06, 111.16it/s]Loading weights:  10%|█         | 74/724 [00:00<00:03, 171.66it/s]Loading weights:  15%|█▍        | 105/724 [00:00<00:02, 210.96it/s]Loading weights:  20%|█▉        | 143/724 [00:00<00:02, 257.69it/s]Loading weights:  24%|██▍       | 175/724 [00:00<00:02, 270.44it/s]Loading weights:  29%|██▊       | 207/724 [00:00<00:01, 277.93it/s]Loading weights:  34%|███▍      | 249/724 [00:01<00:01, 315.70it/s]Loading weights:  39%|███▉      | 283/724 [00:01<00:01, 307.24it/s]Loading weights:  44%|████▎     | 316/724 [00:01<00:01, 304.17it/s]Loading weights:  49%|████▉     | 357/724 [00:01<00:01, 333.13it/s]Loading weights:  54%|█████▍    | 392/724 [00:01<00:01, 324.91it/s]Loading weights:  59%|█████▉    | 426/724 [00:01<00:00, 309.97it/s]Loading weights:  77%|███████▋  | 560/724 [00:01<00:00, 589.42it/s]Loading weights:  94%|█████████▍| 683/724 [00:01<00:00, 767.86it/s]Loading weights: 100%|██████████| 724/724 [00:01<00:00, 378.97it/s]
+The tied weights mapping and config for this model specifies to tie model.language_model.embed_tokens.weight to lm_head.weight, but both are present in the checkpoints, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning
+[1mQwen3_5ForConditionalGenerationWithGeometry LOAD REPORT[0m from: Journey9ni/SpatialStack-Qwen3.5-4B
+Key                                                                                 | Status     |  | 
+------------------------------------------------------------------------------------+------------+--+-
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.proj.bias               | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.k_norm.weight           | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.mlp.fc1.bias          | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.q_norm.weight    | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.ls1.gamma        | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.norm1.weight                | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.attn.qkv.weight        | UNEXPECTED |  | 
+language_feature_fusion.fusion_layers.{0, 1, 2}.0.geo_ln.weight                     | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.proj.weight             | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.qkv.weight        | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.ls1.gamma                   | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.ls2.gamma              | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.ls1.gamma              | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.norm2.weight          | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.mlp.fc1.weight   | UNEXPECTED |  | 
+model.language_feature_fusion.fusion_layers.{0, 1, 2}.0.geo_ln.weight               | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.norm1.bias             | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.attn.proj.bias   | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.mlp.fc2.bias           | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.ls2.gamma             | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.norm2.weight                | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.norm1.bias       | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.mlp.fc2.weight        | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.mlp.fc1.bias                | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.qkv.weight             | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.attn.proj.weight | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.mlp.fc1.bias                 | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.mlp.fc2.bias          | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.qkv.bias          | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.qkv.bias         | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.qkv.weight       | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.ls1.gamma              | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.norm2.bias            | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.norm2.bias             | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.ls2.gamma                    | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.mlp.fc1.bias     | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.ls2.gamma        | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.ls2.gamma                   | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.q_norm.bias       | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.q_norm.weight          | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.norm2.weight           | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.patch_embed.proj.weight          | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.proj.bias        | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.proj.weight      | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.attn.proj.weight       | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.qkv.weight              | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.mlp.fc2.weight              | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.q_norm.weight     | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.k_norm.bias       | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.patch_embed.proj.bias            | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.mlp.fc1.bias           | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.mlp.fc1.weight              | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.ls1.gamma                    | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.attn.qkv.bias    | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.norm1.weight          | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.attn.qkv.weight  | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.mlp.fc1.weight         | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.norm2.weight     | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.norm1.bias             | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.mlp.fc2.bias                | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.mlp.fc1.weight        | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.norm2.weight           | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.mlp.fc1.weight         | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.k_norm.weight     | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.pos_embed                              | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.mlp.fc2.bias     | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.q_norm.weight           | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.k_norm.bias            | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.qkv.bias               | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.norm2.bias                   | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.q_norm.bias      | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.proj.bias              | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.q_norm.bias             | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.mlp.fc2.weight   | UNEXPECTED |  | 
+model.language_feature_fusion.fusion_layers.{0, 1, 2}.0.geo_ln.bias                 | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.norm1.bias            | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.ls1.gamma             | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.k_norm.weight    | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.k_norm.bias             | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.norm2.bias                  | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.norm.weight                      | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.mlp.fc2.weight         | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.q_norm.bias            | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.register_token                                     | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.k_norm.bias      | UNEXPECTED |  | 
+language_feature_fusion.fusion_layers.{0, 1, 2}.0.geo_mlp.{0, 2}.weight             | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.mlp.fc2.bias           | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.mlp.fc1.weight               | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.norm1.weight     | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.norm2.bias             | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.proj.weight       | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.k_norm.weight          | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.norm2.bias       | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.norm1.bias                   | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.mlp.fc2.weight               | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.attn.proj.bias         | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.mlp.fc2.weight         | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.mlp.fc2.bias                 | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.norm1.bias                  | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.qkv.bias                | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.mlp.fc1.bias           | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.proj.weight            | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.norm1.weight           | UNEXPECTED |  | 
+language_feature_fusion.fusion_layers.{0, 1, 2}.0.geo_mlp.{0, 2}.bias               | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.norm1.weight           | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.attn.qkv.bias          | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.norm2.weight                 | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.norm.weight                            | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.proj.bias         | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.norm1.weight                 | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.ls2.gamma              | UNEXPECTED |  | 
+language_feature_fusion.fusion_layers.{0, 1, 2}.0.geo_ln.bias                       | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.patch_embed.proj.weight                | UNEXPECTED |  | 
+model.language_feature_fusion.fusion_layers.{0, 1, 2}.0.geo_mlp.{0, 2}.bias         | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.camera_token                                 | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.pos_embed                        | UNEXPECTED |  | 
+model.language_feature_fusion.fusion_layers.{0, 1, 2}.0.geo_mlp.{0, 2}.weight       | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.register_tokens                  | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.mask_token                       | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.mask_token                             | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.norm.bias                              | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.cls_token                              | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.register_tokens                        | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.camera_token                                       | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.patch_embed.proj.bias                  | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.cls_token                        | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.norm.bias                        | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.register_token                               | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+Warning: FlashAttention 3 is not available, falling back to PyTorch's scaled_dot_product_attention
+[32m2026-11-24 13:27:40.568 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.evaluator_utils[0m:[36mfrom_taskdict[0m:[36m91[0m - [1mNo metadata found in task config for cvbench, using default n_shot=0[0m
+[32m2026-11-24 13:27:40.568 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m425[0m - [1mBuilding contexts for cvbench on rank 0...[0m
+  0%|          | 0/8 [00:00<?, ?it/s]100%|██████████| 8/8 [00:00<00:00, 16802.42it/s]
+[32m2026-11-24 13:27:40.569 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36mevaluate[0m:[36m447[0m - [1mRunning generate_until requests[0m
+Model Responding:   0%|          | 0/8 [00:00<?, ?it/s]The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Model Responding:  12%|█▎        | 1/8 [00:41<04:53, 41.90s/it]Model Responding:  25%|██▌       | 2/8 [00:43<01:48, 18.13s/it]Model Responding:  38%|███▊      | 3/8 [00:44<00:50, 10.18s/it]Model Responding:  50%|█████     | 4/8 [00:45<00:26,  6.66s/it]Model Responding:  62%|██████▎   | 5/8 [00:46<00:13,  4.53s/it]Model Responding:  75%|███████▌  | 6/8 [00:46<00:06,  3.14s/it]Model Responding:  88%|████████▊ | 7/8 [00:47<00:02,  2.26s/it]Model Responding: 100%|██████████| 8/8 [00:47<00:00,  1.68s/it]Model Responding: 100%|██████████| 8/8 [00:47<00:00,  5.93s/it]
+Postprocessing:   0%|          | 0/8 [00:00<?, ?it/s]Postprocessing: 100%|██████████| 8/8 [00:00<00:00, 10394.81it/s]
+[32m2026-11-24 13:28:28.436 +05:30[0m | [1mINFO    [0m | [36mutils[0m:[36mcvbench_aggregate_results[0m:[36m90[0m - [1mEvaluation results: {'accuracy_2d': np.float64(nan), 'accuracy_3d': nan, 'combined_accuracy': np.float64(nan), 'Count': np.float64(0.625), 'Relation': nan, 'Distance': nan, 'Depth': nan}[0m
+[32m2026-11-24 13:28:28.439 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.loggers.evaluation_tracker[0m:[36msave_results_aggregated[0m:[36m188[0m - [1mSaving results aggregated[0m
+[32m2026-11-24 13:28:28.439 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.loggers.evaluation_tracker[0m:[36msave_results_samples[0m:[36m255[0m - [1mSaving per-sample results for: cvbench[0m
+qwen3_5 (pretrained=Journey9ni/SpatialStack-Qwen3.5-4B,use_flash_attention_2=true,max_num_frames=32,max_length=12800,geometry_encoder_path=facebook/VGGT-1B,disable_thinking=true), gen_kwargs: (), limit: 8.0, num_fewshot: None, batch_size: 1
+| Tasks |Version|Filter|n-shot|   Metric    |   |Value|   |Stderr|
+|-------|-------|------|-----:|-------------|---|-----|---|------|
+|cvbench|Yaml   |none  |     0|cvbench_score|↑  |NaN  |±  |   N/A|
+
+[32m2026-11-24 13:28:33.119 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m335[0m - [1mVerbosity set to INFO[0m
+[32m2026-11-24 13:28:33.189 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m423[0m - [1mEvaluation tracker args: {'output_path': '/home/anujaya/ransadi/SpatialStack/results/spatialstack_limit8/blink_spatial'}[0m
+[32m2026-11-24 13:28:33.189 +05:30[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m445[0m - [33m[1m --limit SHOULD ONLY BE USED FOR TESTING.REAL METRICS SHOULD NOT BE COMPUTED USING LIMIT.[0m
+[32m2026-11-24 13:28:33.189 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m514[0m - [1mSelected Tasks: ['blink_spatial'][0m
+[32m2026-11-24 13:28:33.190 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36msimple_evaluate[0m:[36m155[0m - [1mSetting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234[0m
+Traceback (most recent call last):
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 470, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/api/task.py", line 1050, in download
+    self.dataset = datasets.load_from_disk(dataset_path=self.DATASET_PATH)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/datasets/load.py", line 1741, in load_from_disk
+    raise FileNotFoundError(f"Directory {dataset_path} not found")
+FileNotFoundError: Directory cache/datasets/BLINK-Benchmark__BLINK/Spatial_Relation not found
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/__main__.py", line 375, in cli_evaluate
+    results, samples = cli_evaluate_single(args)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/__main__.py", line 520, in cli_evaluate_single
+    results = evaluator.simple_evaluate(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/utils.py", line 533, in _wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/evaluator.py", line 171, in simple_evaluate
+    task_dict = get_task_dict(tasks, task_manager)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/tasks/__init__.py", line 558, in get_task_dict
+    task_name_from_string_dict = task_manager.load_task_or_group(
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/tasks/__init__.py", line 372, in load_task_or_group
+    all_loaded_tasks = dict(collections.ChainMap(*map(self._load_individual_task_or_group, task_list)))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/tasks/__init__.py", line 358, in _load_individual_task_or_group
+    return {group_name: dict(collections.ChainMap(*map(fn, reversed(subtask_list))))}
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/tasks/__init__.py", line 348, in _load_individual_task_or_group
+    return _load_task(task_config, task=name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/tasks/__init__.py", line 259, in _load_task
+    task_object = ConfigurableTask(config=config, model_name=self.model_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/api/task.py", line 720, in __init__
+    self.download(self.config.dataset_kwargs)
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 330, in wrapped_f
+    return self(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 467, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 368, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 411, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x7d015aaa5d90 state=finished raised FileNotFoundError>]
+[32m2026-11-24 13:28:41.196 +05:30[0m | [31m[1mERROR   [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m394[0m - [31m[1mError during evaluation: RetryError[<Future at 0x7d015aaa5d90 state=finished raised FileNotFoundError>]. Please set `--verbosity=DEBUG` to get more information.[0m
+[32m2026-11-24 13:28:45.180 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m335[0m - [1mVerbosity set to INFO[0m
+[32m2026-11-24 13:28:45.251 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m423[0m - [1mEvaluation tracker args: {'output_path': '/home/anujaya/ransadi/SpatialStack/results/spatialstack_limit8/sparbench'}[0m
+[32m2026-11-24 13:28:45.251 +05:30[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m445[0m - [33m[1m --limit SHOULD ONLY BE USED FOR TESTING.REAL METRICS SHOULD NOT BE COMPUTED USING LIMIT.[0m
+[32m2026-11-24 13:28:45.251 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m514[0m - [1mSelected Tasks: ['sparbench'][0m
+[32m2026-11-24 13:28:45.252 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36msimple_evaluate[0m:[36m155[0m - [1mSetting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234[0m
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Generating test split:   0%|          | 0/7211 [00:00<?, ? examples/s]Generating test split:   3%|▎         | 200/7211 [00:00<00:05, 1279.61 examples/s]Generating test split:   8%|▊         | 600/7211 [00:00<00:03, 1943.72 examples/s]Generating test split:  14%|█▍        | 1000/7211 [00:00<00:02, 2455.76 examples/s]Generating test split:  19%|█▉        | 1400/7211 [00:00<00:02, 2695.20 examples/s]Generating test split:  24%|██▎       | 1700/7211 [00:00<00:02, 2689.24 examples/s]Generating test split:  28%|██▊       | 2003/7211 [00:00<00:01, 2605.63 examples/s]Generating test split:  35%|███▍      | 2503/7211 [00:00<00:01, 2901.47 examples/s]Generating test split:  42%|████▏     | 3003/7211 [00:01<00:01, 3293.60 examples/s]Generating test split:  49%|████▊     | 3503/7211 [00:01<00:01, 2343.12 examples/s]Generating test split:  54%|█████▍    | 3906/7211 [00:01<00:01, 2353.89 examples/s]Generating test split:  62%|██████▏   | 4506/7211 [00:01<00:00, 2734.67 examples/s]Generating test split:  74%|███████▎  | 5306/7211 [00:01<00:00, 3497.49 examples/s]Generating test split:  79%|███████▉  | 5709/7211 [00:02<00:00, 3074.08 examples/s]Generating test split:  85%|████████▍ | 6109/7211 [00:02<00:00, 2684.43 examples/s]Generating test split:  89%|████████▉ | 6409/7211 [00:02<00:00, 1827.56 examples/s]Generating test split:  96%|█████████▌| 6909/7211 [00:02<00:00, 1804.68 examples/s]Generating test split: 100%|█████████▉| 7209/7211 [00:03<00:00, 1608.83 examples/s]Generating test split: 100%|██████████| 7211/7211 [00:03<00:00, 2244.16 examples/s]
+Loading weights:   0%|          | 0/724 [00:00<?, ?it/s]Loading weights:   0%|          | 1/724 [00:00<02:07,  5.68it/s]Loading weights:   0%|          | 2/724 [00:00<02:16,  5.30it/s]Loading weights:   6%|▌         | 41/724 [00:00<00:05, 121.63it/s]Loading weights:  10%|█         | 73/724 [00:00<00:03, 181.24it/s]Loading weights:  14%|█▍        | 101/724 [00:00<00:02, 209.73it/s]Loading weights:  19%|█▉        | 141/724 [00:00<00:02, 262.74it/s]Loading weights:  24%|██▍       | 173/724 [00:00<00:01, 279.63it/s]Loading weights:  28%|██▊       | 205/724 [00:00<00:01, 291.10it/s]Loading weights:  33%|███▎      | 240/724 [00:01<00:01, 306.15it/s]Loading weights:  38%|███▊      | 273/724 [00:01<00:01, 312.46it/s]Loading weights:  42%|████▏     | 307/724 [00:01<00:01, 319.88it/s]Loading weights:  48%|████▊     | 344/724 [00:01<00:01, 333.21it/s]Loading weights:  52%|█████▏    | 378/724 [00:01<00:01, 328.50it/s]Loading weights:  57%|█████▋    | 412/724 [00:01<00:00, 322.04it/s]Loading weights:  64%|██████▍   | 466/724 [00:01<00:00, 384.86it/s]Loading weights:  85%|████████▍ | 612/724 [00:01<00:00, 698.70it/s]Loading weights: 100%|██████████| 724/724 [00:01<00:00, 380.91it/s]
+The tied weights mapping and config for this model specifies to tie model.language_model.embed_tokens.weight to lm_head.weight, but both are present in the checkpoints, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning
+[1mQwen3_5ForConditionalGenerationWithGeometry LOAD REPORT[0m from: Journey9ni/SpatialStack-Qwen3.5-4B
+Key                                                                                 | Status     |  | 
+------------------------------------------------------------------------------------+------------+--+-
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.attn.qkv.weight  | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.mlp.fc2.weight         | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.mlp.fc1.bias           | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.proj.bias         | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.mlp.fc2.bias           | UNEXPECTED |  | 
+language_feature_fusion.fusion_layers.{0, 1, 2}.0.geo_mlp.{0, 2}.bias               | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.attn.proj.bias         | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.norm2.weight                | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.q_norm.bias             | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.q_norm.weight     | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.q_norm.weight           | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.mlp.fc1.weight               | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.mlp.fc2.weight              | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.norm1.bias                  | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.norm2.bias                  | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.norm2.weight                 | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.mlp.fc1.bias           | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.mlp.fc1.bias                 | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.attn.qkv.bias          | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.proj.weight       | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.k_norm.weight          | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.proj.weight            | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.norm2.bias                   | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.qkv.weight              | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.q_norm.bias       | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.mlp.fc1.bias          | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.qkv.bias                | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.proj.bias               | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.norm1.bias            | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.norm1.bias                   | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.norm2.weight           | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.mlp.fc2.weight        | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.norm1.bias       | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.norm2.bias            | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.attn.qkv.weight        | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.proj.bias        | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.mlp.fc1.weight   | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.norm1.bias             | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.norm1.weight                 | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.q_norm.bias            | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.qkv.bias          | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.norm1.weight           | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.ls1.gamma                    | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.attn.qkv.bias    | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.ls2.gamma        | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.norm2.bias             | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.norm1.bias             | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.ls2.gamma             | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.qkv.bias               | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.norm2.weight          | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.proj.weight             | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.mlp.fc1.weight         | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.q_norm.bias      | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.norm1.weight          | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.qkv.weight             | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.mlp.fc1.weight        | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.mlp.fc1.bias                | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.mlp.fc2.bias                | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.norm1.weight     | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.ls1.gamma        | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.mlp.fc1.weight              | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.proj.weight      | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.ls2.gamma                    | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.k_norm.weight     | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.norm1.weight                | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.qkv.bias         | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.mlp.fc2.weight         | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.mlp.fc1.weight         | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.ls1.gamma             | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.mlp.fc2.bias     | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.proj.bias              | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.k_norm.weight    | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.norm1.weight           | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.k_norm.weight           | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.norm2.weight           | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.mlp.fc2.bias                 | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.ls2.gamma                   | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.mlp.fc2.weight   | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.ls2.gamma              | UNEXPECTED |  | 
+language_feature_fusion.fusion_layers.{0, 1, 2}.0.geo_ln.bias                       | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.q_norm.weight          | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.norm2.bias             | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.attn.proj.weight       | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.ls1.gamma              | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.mlp.fc2.weight               | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.qkv.weight        | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.qkv.weight       | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.ls1.gamma                   | UNEXPECTED |  | 
+language_feature_fusion.fusion_layers.{0, 1, 2}.0.geo_ln.weight                     | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.mlp.fc1.bias     | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.mlp.fc2.bias           | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.attn.proj.weight | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.q_norm.weight    | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.k_norm.bias            | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.register_token                               | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.norm2.bias       | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.ls1.gamma              | UNEXPECTED |  | 
+model.language_feature_fusion.fusion_layers.{0, 1, 2}.0.geo_mlp.{0, 2}.bias         | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.mlp.fc2.bias          | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.k_norm.bias      | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.k_norm.bias             | UNEXPECTED |  | 
+model.language_feature_fusion.fusion_layers.{0, 1, 2}.0.geo_ln.weight               | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.attn.proj.bias   | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.ls2.gamma              | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.k_norm.bias       | UNEXPECTED |  | 
+model.language_feature_fusion.fusion_layers.{0, 1, 2}.0.geo_ln.bias                 | UNEXPECTED |  | 
+language_feature_fusion.fusion_layers.{0, 1, 2}.0.geo_mlp.{0, 2}.weight             | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.norm2.weight     | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.register_tokens                        | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.norm.weight                            | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.register_token                                     | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.norm.weight                      | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.patch_embed.proj.bias                  | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.cls_token                        | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.cls_token                              | UNEXPECTED |  | 
+model.language_feature_fusion.fusion_layers.{0, 1, 2}.0.geo_mlp.{0, 2}.weight       | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.register_tokens                  | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.norm.bias                        | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.patch_embed.proj.bias            | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.pos_embed                        | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.camera_token                                 | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.camera_token                                       | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.pos_embed                              | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.patch_embed.proj.weight                | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.mask_token                             | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.mask_token                       | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.norm.bias                              | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.patch_embed.proj.weight          | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+Warning: FlashAttention 3 is not available, falling back to PyTorch's scaled_dot_product_attention
+[32m2026-11-24 13:29:44.488 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.evaluator_utils[0m:[36mfrom_taskdict[0m:[36m91[0m - [1mNo metadata found in task config for sparbench, using default n_shot=0[0m
+[32m2026-11-24 13:29:44.488 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m425[0m - [1mBuilding contexts for sparbench on rank 0...[0m
+  0%|          | 0/8 [00:00<?, ?it/s]100%|██████████| 8/8 [00:00<00:00, 21317.94it/s]
+[32m2026-11-24 13:29:44.489 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36mevaluate[0m:[36m447[0m - [1mRunning generate_until requests[0m
+Model Responding:   0%|          | 0/8 [00:00<?, ?it/s]The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Model Responding:  12%|█▎        | 1/8 [00:01<00:11,  1.62s/it]Model Responding:  25%|██▌       | 2/8 [00:02<00:07,  1.31s/it]Model Responding:  38%|███▊      | 3/8 [00:03<00:04,  1.04it/s]Model Responding:  50%|█████     | 4/8 [00:03<00:03,  1.27it/s]Model Responding:  62%|██████▎   | 5/8 [00:04<00:02,  1.13it/s]Model Responding:  75%|███████▌  | 6/8 [00:05<00:01,  1.05it/s]Model Responding:  88%|████████▊ | 7/8 [00:07<00:01,  1.03s/it]Model Responding: 100%|██████████| 8/8 [00:08<00:00,  1.13s/it]Model Responding: 100%|██████████| 8/8 [00:08<00:00,  1.05s/it]
+Postprocessing:   0%|          | 0/8 [00:00<?, ?it/s]Postprocessing: 100%|██████████| 8/8 [00:00<00:00, 7278.62it/s]
+[32m2026-11-24 13:29:53.307 +05:30[0m | [1mINFO    [0m | [36mutils[0m:[36msparbench_aggregate_results[0m:[36m345[0m - [1mEvaluation results: {'depth_prediction_oc_MRA:.5:.95:.05': np.float64(0.8875), 'overall': np.float64(0.8875), 'Low': np.float64(0.8875), 'Middle': np.float64(nan), 'High': np.float64(nan)}[0m
+[32m2026-11-24 13:29:53.310 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.loggers.evaluation_tracker[0m:[36msave_results_aggregated[0m:[36m188[0m - [1mSaving results aggregated[0m
+[32m2026-11-24 13:29:53.310 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.loggers.evaluation_tracker[0m:[36msave_results_samples[0m:[36m255[0m - [1mSaving per-sample results for: sparbench[0m
+qwen3_5 (pretrained=Journey9ni/SpatialStack-Qwen3.5-4B,use_flash_attention_2=true,max_num_frames=32,max_length=12800,geometry_encoder_path=facebook/VGGT-1B,disable_thinking=true), gen_kwargs: (), limit: 8.0, num_fewshot: None, batch_size: 1
+|  Tasks  |Version|Filter|n-shot|    Metric     |   |Value|   |Stderr|
+|---------|-------|------|-----:|---------------|---|----:|---|------|
+|sparbench|Yaml   |none  |     0|sparbench_score|↑  |88.75|±  |   N/A|
+
+[32m2026-11-24 13:29:57.953 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m335[0m - [1mVerbosity set to INFO[0m
+[32m2026-11-24 13:29:58.023 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m423[0m - [1mEvaluation tracker args: {'output_path': '/home/anujaya/ransadi/SpatialStack/results/spatialstack_limit8/mmsibench'}[0m
+[32m2026-11-24 13:29:58.023 +05:30[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m445[0m - [33m[1m --limit SHOULD ONLY BE USED FOR TESTING.REAL METRICS SHOULD NOT BE COMPUTED USING LIMIT.[0m
+[32m2026-11-24 13:29:58.024 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m514[0m - [1mSelected Tasks: ['mmsibench'][0m
+[32m2026-11-24 13:29:58.024 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36msimple_evaluate[0m:[36m155[0m - [1mSetting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234[0m
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Ignoring part of dataset_info from the dataset card: The `splits` field in YAML is malformed or missing the name/num_examples/num_bytes fields
+Generating test split:   0%|          | 0/1000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1000/1000 [00:11<00:00, 84.46 examples/s]Generating test split: 100%|██████████| 1000/1000 [00:11<00:00, 84.06 examples/s]
+Loading weights:   0%|          | 0/724 [00:00<?, ?it/s]Loading weights:   0%|          | 1/724 [00:00<04:26,  2.71it/s]Loading weights:   6%|▌         | 41/724 [00:00<00:06, 112.00it/s]Loading weights:  10%|█         | 73/724 [00:00<00:03, 169.99it/s]Loading weights:  14%|█▍        | 101/724 [00:00<00:03, 199.74it/s]Loading weights:  19%|█▉        | 136/724 [00:00<00:02, 241.94it/s]Loading weights:  24%|██▍       | 172/724 [00:00<00:02, 270.76it/s]Loading weights:  28%|██▊       | 205/724 [00:00<00:01, 284.57it/s]Loading weights:  33%|███▎      | 240/724 [00:01<00:01, 300.96it/s]Loading weights:  38%|███▊      | 274/724 [00:01<00:01, 309.73it/s]Loading weights:  42%|████▏     | 307/724 [00:01<00:01, 310.56it/s]Loading weights:  47%|████▋     | 342/724 [00:01<00:01, 320.56it/s]Loading weights:  52%|█████▏    | 375/724 [00:01<00:01, 315.15it/s]Loading weights:  57%|█████▋    | 412/724 [00:01<00:00, 328.00it/s]Loading weights:  65%|██████▍   | 470/724 [00:01<00:00, 400.93it/s]Loading weights:  80%|███████▉  | 576/724 [00:01<00:00, 593.45it/s]Loading weights:  96%|█████████▌| 696/724 [00:01<00:00, 770.21it/s]Loading weights: 100%|██████████| 724/724 [00:01<00:00, 371.00it/s]
+The tied weights mapping and config for this model specifies to tie model.language_model.embed_tokens.weight to lm_head.weight, but both are present in the checkpoints, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning
+[1mQwen3_5ForConditionalGenerationWithGeometry LOAD REPORT[0m from: Journey9ni/SpatialStack-Qwen3.5-4B
+Key                                                                                 | Status     |  | 
+------------------------------------------------------------------------------------+------------+--+-
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.ls2.gamma              | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.norm1.bias             | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.ls1.gamma              | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.ls1.gamma                   | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.norm1.weight     | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.mlp.fc1.weight               | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.mlp.fc1.bias          | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.attn.proj.weight | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.norm1.weight           | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.k_norm.weight          | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.mlp.fc2.weight   | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.norm1.bias                   | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.norm2.weight                | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.k_norm.bias            | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.q_norm.weight           | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.mlp.fc1.weight         | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.ls2.gamma              | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.mlp.fc2.bias           | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.norm2.weight          | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.mlp.fc1.weight   | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.ls1.gamma                    | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.norm2.bias                   | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.norm2.bias            | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.q_norm.bias       | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.attn.qkv.bias    | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.attn.proj.bias   | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.k_norm.weight     | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.ls2.gamma             | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.norm1.bias       | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.ls1.gamma              | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.proj.bias              | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.norm2.bias             | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.k_norm.bias       | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.qkv.weight       | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.norm1.weight                 | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.ls1.gamma        | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.qkv.bias               | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.proj.weight             | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.mlp.fc2.weight               | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.norm2.weight                 | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.qkv.bias          | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.norm1.weight           | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.proj.weight      | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.norm2.weight     | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.ls2.gamma                   | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.mlp.fc2.bias                 | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.norm1.bias             | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.mlp.fc1.weight              | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.attn.qkv.weight  | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.mlp.fc1.weight         | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.attn.proj.weight       | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.mlp.fc1.bias                | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.k_norm.bias      | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.norm1.weight                | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.k_norm.bias             | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.mlp.fc2.weight         | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.q_norm.weight          | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.proj.bias         | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.mlp.fc1.bias           | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.norm2.bias       | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.attn.proj.bias         | UNEXPECTED |  | 
+language_feature_fusion.fusion_layers.{0, 1, 2}.0.geo_mlp.{0, 2}.weight             | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.mlp.fc1.bias                 | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.q_norm.weight    | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.mlp.fc2.weight         | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.mlp.fc2.bias                | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.mlp.fc2.weight              | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.pos_embed                              | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.mlp.fc2.bias     | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.q_norm.bias            | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.proj.weight       | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.norm2.bias                  | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.camera_token                                       | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.qkv.weight        | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.mlp.fc2.bias           | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.qkv.weight             | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.mlp.fc1.weight        | UNEXPECTED |  | 
+language_feature_fusion.fusion_layers.{0, 1, 2}.0.geo_mlp.{0, 2}.bias               | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.ls2.gamma                    | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.q_norm.bias      | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.norm1.bias                  | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.norm2.bias             | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.qkv.bias         | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.norm1.bias            | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.norm2.weight           | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.ls1.gamma             | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.q_norm.bias             | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.q_norm.weight     | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.k_norm.weight    | UNEXPECTED |  | 
+model.language_feature_fusion.fusion_layers.{0, 1, 2}.0.geo_mlp.{0, 2}.bias         | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.proj.bias        | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.ls2.gamma        | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.mlp.fc2.bias          | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.norm1.weight          | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.global_blocks.{0...23}.mlp.fc2.weight        | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.mlp.fc1.bias     | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.global_blocks.{0...23}.attn.proj.weight            | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.proj.bias               | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.norm.weight                            | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.k_norm.weight           | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.attn.qkv.bias          | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.register_tokens                        | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.mask_token                       | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.attn.qkv.weight        | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.qkv.bias                | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.cls_token                              | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.patch_embed.proj.bias            | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.blocks.{0...23}.norm2.weight           | UNEXPECTED |  | 
+model.language_feature_fusion.fusion_layers.{0, 1, 2}.0.geo_ln.bias                 | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.mlp.fc1.bias           | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.frame_blocks.{0...23}.attn.qkv.weight              | UNEXPECTED |  | 
+language_feature_fusion.fusion_layers.{0, 1, 2}.0.geo_ln.weight                     | UNEXPECTED |  | 
+model.language_feature_fusion.fusion_layers.{0, 1, 2}.0.geo_mlp.{0, 2}.weight       | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.pos_embed                        | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.camera_token                                 | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.norm.bias                        | UNEXPECTED |  | 
+model.language_feature_fusion.fusion_layers.{0, 1, 2}.0.geo_ln.weight               | UNEXPECTED |  | 
+language_feature_fusion.fusion_layers.{0, 1, 2}.0.geo_ln.bias                       | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.norm.bias                              | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.patch_embed.proj.weight                | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.cls_token                        | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.patch_embed.proj.bias                  | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.register_token                                     | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.register_token                               | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.norm.weight                      | UNEXPECTED |  | 
+geometry_encoder.vggt.aggregator.patch_embed.mask_token                             | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.patch_embed.proj.weight          | UNEXPECTED |  | 
+model.geometry_encoder.vggt.aggregator.patch_embed.register_tokens                  | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+Warning: FlashAttention 3 is not available, falling back to PyTorch's scaled_dot_product_attention
+[32m2026-11-24 13:30:44.868 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.evaluator_utils[0m:[36mfrom_taskdict[0m:[36m91[0m - [1mNo metadata found in task config for mmsibench, using default n_shot=0[0m
+[32m2026-11-24 13:30:44.869 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m425[0m - [1mBuilding contexts for mmsibench on rank 0...[0m
+  0%|          | 0/8 [00:00<?, ?it/s]100%|██████████| 8/8 [00:00<00:00, 21063.67it/s]
+[32m2026-11-24 13:30:44.869 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36mevaluate[0m:[36m447[0m - [1mRunning generate_until requests[0m
+Model Responding:   0%|          | 0/8 [00:00<?, ?it/s]The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Model Responding:  12%|█▎        | 1/8 [00:14<01:38, 14.09s/it]Model Responding:  25%|██▌       | 2/8 [00:16<00:42,  7.14s/it]Model Responding:  38%|███▊      | 3/8 [00:18<00:24,  4.87s/it]Model Responding:  50%|█████     | 4/8 [00:20<00:14,  3.71s/it]Model Responding:  62%|██████▎   | 5/8 [00:22<00:09,  3.01s/it]Model Responding:  75%|███████▌  | 6/8 [00:24<00:05,  2.63s/it]Model Responding:  88%|████████▊ | 7/8 [00:24<00:01,  1.98s/it]Model Responding: 100%|██████████| 8/8 [00:25<00:00,  1.53s/it]Model Responding: 100%|██████████| 8/8 [00:25<00:00,  3.17s/it]
+Postprocessing:   0%|          | 0/8 [00:00<?, ?it/s]Postprocessing: 100%|██████████| 8/8 [00:00<00:00, 9968.64it/s]
+[32m2026-11-24 13:31:10.636 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.loggers.evaluation_tracker[0m:[36msave_results_aggregated[0m:[36m188[0m - [1mSaving results aggregated[0m
+[32m2026-11-24 13:31:10.637 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.loggers.evaluation_tracker[0m:[36msave_results_samples[0m:[36m255[0m - [1mSaving per-sample results for: mmsibench[0m
+qwen3_5 (pretrained=Journey9ni/SpatialStack-Qwen3.5-4B,use_flash_attention_2=true,max_num_frames=32,max_length=12800,geometry_encoder_path=facebook/VGGT-1B,disable_thinking=true), gen_kwargs: (), limit: 8.0, num_fewshot: None, batch_size: 1
+|  Tasks  |Version|Filter|n-shot|     Metric      |   |Value |   |Stderr|
+|---------|-------|------|-----:|-----------------|---|-----:|---|------|
+|mmsibench|Yaml   |none  |     0|Attribute (Meas.)|↑  |0.0000|±  |   N/A|
+|mmsibench|Yaml   |none  |     0|Motion (Cam.)    |↑  |0.6667|±  |   N/A|
+|mmsibench|Yaml   |none  |     0|average          |↑  |0.3750|±  |   N/A|
+

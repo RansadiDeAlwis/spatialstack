@@ -1,0 +1,333 @@
+[INFO] cuda_home=/home/anujaya/ransadi/SpatialStack/env
+[INFO] hf_home=/home/anujaya/ransadi/SpatialStack/repo/cache/hf-home
+[INFO] hf_hub_cache=/home/anujaya/ransadi/SpatialStack/repo/cache/hub
+[INFO] hf_datasets_cache=/home/anujaya/ransadi/SpatialStack/repo/cache/datasets
+[INFO] triton_cache_dir=/tmp/anujaya/spatialstack-triton/manual/0
+[32m2026-11-24 13:25:36.684 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m335[0m - [1mVerbosity set to INFO[0m
+[32m2026-11-24 13:25:36.759 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m423[0m - [1mEvaluation tracker args: {'output_path': '/home/anujaya/ransadi/SpatialStack/results/spatialstack_limit8/vsibench'}[0m
+[32m2026-11-24 13:25:36.759 +05:30[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m445[0m - [33m[1m --limit SHOULD ONLY BE USED FOR TESTING.REAL METRICS SHOULD NOT BE COMPUTED USING LIMIT.[0m
+[32m2026-11-24 13:25:36.760 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m514[0m - [1mSelected Tasks: ['vsibench'][0m
+[32m2026-11-24 13:25:36.761 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36msimple_evaluate[0m:[36m155[0m - [1mSetting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234[0m
+[32m2026-11-24 13:25:39.054 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36munzip_video_data[0m:[36m968[0m - [1mExtracted all files from /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--VSI-Bench/snapshots/3a6a1cf9ac54c403509b15260897cc6ddc41b408/arkitscenes.zip to /home/anujaya/ransadi/SpatialStack/repo/cache/hf-home/vsibench[0m
+[32m2026-11-24 13:25:42.710 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36munzip_video_data[0m:[36m968[0m - [1mExtracted all files from /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--VSI-Bench/snapshots/3a6a1cf9ac54c403509b15260897cc6ddc41b408/scannet.zip to /home/anujaya/ransadi/SpatialStack/repo/cache/hf-home/vsibench[0m
+[32m2026-11-24 13:25:43.836 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36munzip_video_data[0m:[36m968[0m - [1mExtracted all files from /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--VSI-Bench/snapshots/3a6a1cf9ac54c403509b15260897cc6ddc41b408/scannetpp.zip to /home/anujaya/ransadi/SpatialStack/repo/cache/hf-home/vsibench[0m
+Traceback (most recent call last):
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 470, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/api/task.py", line 1052, in download
+    self.dataset = datasets.load_dataset(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/datasets/load.py", line 1667, in load_dataset
+    builder_instance = load_dataset_builder(
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/datasets/load.py", line 1290, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/datasets/load.py", line 1182, in dataset_module_factory
+    raise e1 from None
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/datasets/load.py", line 1125, in dataset_module_factory
+    raise ConnectionError(f"Couldn't reach '{path}' on the Hub ({e.__class__.__name__})") from e
+ConnectionError: Couldn't reach 'nyu-visionx/VSI-Bench' on the Hub (OfflineModeIsEnabled)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/__main__.py", line 375, in cli_evaluate
+    results, samples = cli_evaluate_single(args)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/__main__.py", line 520, in cli_evaluate_single
+    results = evaluator.simple_evaluate(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/utils.py", line 533, in _wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/evaluator.py", line 171, in simple_evaluate
+    task_dict = get_task_dict(tasks, task_manager)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/tasks/__init__.py", line 558, in get_task_dict
+    task_name_from_string_dict = task_manager.load_task_or_group(
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/tasks/__init__.py", line 372, in load_task_or_group
+    all_loaded_tasks = dict(collections.ChainMap(*map(self._load_individual_task_or_group, task_list)))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/tasks/__init__.py", line 289, in _load_individual_task_or_group
+    return _load_task(task_config, task=name_or_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/tasks/__init__.py", line 259, in _load_task
+    task_object = ConfigurableTask(config=config, model_name=self.model_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/api/task.py", line 720, in __init__
+    self.download(self.config.dataset_kwargs)
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 330, in wrapped_f
+    return self(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 467, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 368, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 411, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x7978f212ba70 state=finished raised ConnectionError>]
+[32m2026-11-24 13:25:51.842 +05:30[0m | [31m[1mERROR   [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m394[0m - [31m[1mError during evaluation: RetryError[<Future at 0x7978f212ba70 state=finished raised ConnectionError>]. Please set `--verbosity=DEBUG` to get more information.[0m
+[32m2026-11-24 13:25:55.836 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m335[0m - [1mVerbosity set to INFO[0m
+[32m2026-11-24 13:25:55.904 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m423[0m - [1mEvaluation tracker args: {'output_path': '/home/anujaya/ransadi/SpatialStack/results/spatialstack_limit8/cvbench'}[0m
+[32m2026-11-24 13:25:55.904 +05:30[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m445[0m - [33m[1m --limit SHOULD ONLY BE USED FOR TESTING.REAL METRICS SHOULD NOT BE COMPUTED USING LIMIT.[0m
+[32m2026-11-24 13:25:55.904 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m514[0m - [1mSelected Tasks: ['cvbench'][0m
+[32m2026-11-24 13:25:55.905 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36msimple_evaluate[0m:[36m155[0m - [1mSetting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234[0m
+Traceback (most recent call last):
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 470, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/api/task.py", line 1052, in download
+    self.dataset = datasets.load_dataset(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/datasets/load.py", line 1667, in load_dataset
+    builder_instance = load_dataset_builder(
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/datasets/load.py", line 1290, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/datasets/load.py", line 1182, in dataset_module_factory
+    raise e1 from None
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/datasets/load.py", line 1125, in dataset_module_factory
+    raise ConnectionError(f"Couldn't reach '{path}' on the Hub ({e.__class__.__name__})") from e
+ConnectionError: Couldn't reach 'nyu-visionx/CV-Bench' on the Hub (OfflineModeIsEnabled)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/__main__.py", line 375, in cli_evaluate
+    results, samples = cli_evaluate_single(args)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/__main__.py", line 520, in cli_evaluate_single
+    results = evaluator.simple_evaluate(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/utils.py", line 533, in _wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/evaluator.py", line 171, in simple_evaluate
+    task_dict = get_task_dict(tasks, task_manager)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/tasks/__init__.py", line 558, in get_task_dict
+    task_name_from_string_dict = task_manager.load_task_or_group(
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/tasks/__init__.py", line 372, in load_task_or_group
+    all_loaded_tasks = dict(collections.ChainMap(*map(self._load_individual_task_or_group, task_list)))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/tasks/__init__.py", line 289, in _load_individual_task_or_group
+    return _load_task(task_config, task=name_or_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/tasks/__init__.py", line 259, in _load_task
+    task_object = ConfigurableTask(config=config, model_name=self.model_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/api/task.py", line 720, in __init__
+    self.download(self.config.dataset_kwargs)
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 330, in wrapped_f
+    return self(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 467, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 368, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 411, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x759246d0ba10 state=finished raised ConnectionError>]
+[32m2026-11-24 13:26:03.913 +05:30[0m | [31m[1mERROR   [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m394[0m - [31m[1mError during evaluation: RetryError[<Future at 0x759246d0ba10 state=finished raised ConnectionError>]. Please set `--verbosity=DEBUG` to get more information.[0m
+[32m2026-11-24 13:26:07.880 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m335[0m - [1mVerbosity set to INFO[0m
+[32m2026-11-24 13:26:07.946 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m423[0m - [1mEvaluation tracker args: {'output_path': '/home/anujaya/ransadi/SpatialStack/results/spatialstack_limit8/blink_spatial'}[0m
+[32m2026-11-24 13:26:07.946 +05:30[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m445[0m - [33m[1m --limit SHOULD ONLY BE USED FOR TESTING.REAL METRICS SHOULD NOT BE COMPUTED USING LIMIT.[0m
+[32m2026-11-24 13:26:07.946 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m514[0m - [1mSelected Tasks: ['blink_spatial'][0m
+[32m2026-11-24 13:26:07.947 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36msimple_evaluate[0m:[36m155[0m - [1mSetting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234[0m
+Traceback (most recent call last):
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 470, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/api/task.py", line 1050, in download
+    self.dataset = datasets.load_from_disk(dataset_path=self.DATASET_PATH)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/datasets/load.py", line 1741, in load_from_disk
+    raise FileNotFoundError(f"Directory {dataset_path} not found")
+FileNotFoundError: Directory cache/datasets/BLINK-Benchmark__BLINK/Spatial_Relation not found
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/__main__.py", line 375, in cli_evaluate
+    results, samples = cli_evaluate_single(args)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/__main__.py", line 520, in cli_evaluate_single
+    results = evaluator.simple_evaluate(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/utils.py", line 533, in _wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/evaluator.py", line 171, in simple_evaluate
+    task_dict = get_task_dict(tasks, task_manager)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/tasks/__init__.py", line 558, in get_task_dict
+    task_name_from_string_dict = task_manager.load_task_or_group(
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/tasks/__init__.py", line 372, in load_task_or_group
+    all_loaded_tasks = dict(collections.ChainMap(*map(self._load_individual_task_or_group, task_list)))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/tasks/__init__.py", line 358, in _load_individual_task_or_group
+    return {group_name: dict(collections.ChainMap(*map(fn, reversed(subtask_list))))}
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/tasks/__init__.py", line 348, in _load_individual_task_or_group
+    return _load_task(task_config, task=name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/tasks/__init__.py", line 259, in _load_task
+    task_object = ConfigurableTask(config=config, model_name=self.model_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/api/task.py", line 720, in __init__
+    self.download(self.config.dataset_kwargs)
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 330, in wrapped_f
+    return self(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 467, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 368, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 411, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x73fec62a6570 state=finished raised FileNotFoundError>]
+[32m2026-11-24 13:26:15.964 +05:30[0m | [31m[1mERROR   [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m394[0m - [31m[1mError during evaluation: RetryError[<Future at 0x73fec62a6570 state=finished raised FileNotFoundError>]. Please set `--verbosity=DEBUG` to get more information.[0m
+[32m2026-11-24 13:26:19.905 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m335[0m - [1mVerbosity set to INFO[0m
+[32m2026-11-24 13:26:19.973 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m423[0m - [1mEvaluation tracker args: {'output_path': '/home/anujaya/ransadi/SpatialStack/results/spatialstack_limit8/sparbench'}[0m
+[32m2026-11-24 13:26:19.973 +05:30[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m445[0m - [33m[1m --limit SHOULD ONLY BE USED FOR TESTING.REAL METRICS SHOULD NOT BE COMPUTED USING LIMIT.[0m
+[32m2026-11-24 13:26:19.973 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m514[0m - [1mSelected Tasks: ['sparbench'][0m
+[32m2026-11-24 13:26:19.974 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36msimple_evaluate[0m:[36m155[0m - [1mSetting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234[0m
+Traceback (most recent call last):
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 470, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/api/task.py", line 1052, in download
+    self.dataset = datasets.load_dataset(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/datasets/load.py", line 1667, in load_dataset
+    builder_instance = load_dataset_builder(
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/datasets/load.py", line 1290, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/datasets/load.py", line 1182, in dataset_module_factory
+    raise e1 from None
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/datasets/load.py", line 1125, in dataset_module_factory
+    raise ConnectionError(f"Couldn't reach '{path}' on the Hub ({e.__class__.__name__})") from e
+ConnectionError: Couldn't reach 'jasonzhango/SPAR-Bench' on the Hub (OfflineModeIsEnabled)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/__main__.py", line 375, in cli_evaluate
+    results, samples = cli_evaluate_single(args)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/__main__.py", line 520, in cli_evaluate_single
+    results = evaluator.simple_evaluate(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/utils.py", line 533, in _wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/evaluator.py", line 171, in simple_evaluate
+    task_dict = get_task_dict(tasks, task_manager)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/tasks/__init__.py", line 558, in get_task_dict
+    task_name_from_string_dict = task_manager.load_task_or_group(
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/tasks/__init__.py", line 372, in load_task_or_group
+    all_loaded_tasks = dict(collections.ChainMap(*map(self._load_individual_task_or_group, task_list)))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/tasks/__init__.py", line 289, in _load_individual_task_or_group
+    return _load_task(task_config, task=name_or_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/tasks/__init__.py", line 259, in _load_task
+    task_object = ConfigurableTask(config=config, model_name=self.model_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/api/task.py", line 720, in __init__
+    self.download(self.config.dataset_kwargs)
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 330, in wrapped_f
+    return self(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 467, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 368, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 411, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x7770741bd8e0 state=finished raised ConnectionError>]
+[32m2026-11-24 13:26:27.986 +05:30[0m | [31m[1mERROR   [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m394[0m - [31m[1mError during evaluation: RetryError[<Future at 0x7770741bd8e0 state=finished raised ConnectionError>]. Please set `--verbosity=DEBUG` to get more information.[0m
+[32m2026-11-24 13:26:32.533 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m335[0m - [1mVerbosity set to INFO[0m
+[32m2026-11-24 13:26:32.613 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m423[0m - [1mEvaluation tracker args: {'output_path': '/home/anujaya/ransadi/SpatialStack/results/spatialstack_limit8/mmsibench'}[0m
+[32m2026-11-24 13:26:32.613 +05:30[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m445[0m - [33m[1m --limit SHOULD ONLY BE USED FOR TESTING.REAL METRICS SHOULD NOT BE COMPUTED USING LIMIT.[0m
+[32m2026-11-24 13:26:32.613 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m514[0m - [1mSelected Tasks: ['mmsibench'][0m
+[32m2026-11-24 13:26:32.614 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36msimple_evaluate[0m:[36m155[0m - [1mSetting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234[0m
+Traceback (most recent call last):
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 470, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/api/task.py", line 1052, in download
+    self.dataset = datasets.load_dataset(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/datasets/load.py", line 1667, in load_dataset
+    builder_instance = load_dataset_builder(
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/datasets/load.py", line 1290, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/datasets/load.py", line 1182, in dataset_module_factory
+    raise e1 from None
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/datasets/load.py", line 1125, in dataset_module_factory
+    raise ConnectionError(f"Couldn't reach '{path}' on the Hub ({e.__class__.__name__})") from e
+ConnectionError: Couldn't reach 'RunsenXu/MMSI-Bench' on the Hub (OfflineModeIsEnabled)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/__main__.py", line 375, in cli_evaluate
+    results, samples = cli_evaluate_single(args)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/__main__.py", line 520, in cli_evaluate_single
+    results = evaluator.simple_evaluate(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/utils.py", line 533, in _wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/evaluator.py", line 171, in simple_evaluate
+    task_dict = get_task_dict(tasks, task_manager)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/tasks/__init__.py", line 558, in get_task_dict
+    task_name_from_string_dict = task_manager.load_task_or_group(
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/tasks/__init__.py", line 372, in load_task_or_group
+    all_loaded_tasks = dict(collections.ChainMap(*map(self._load_individual_task_or_group, task_list)))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/tasks/__init__.py", line 289, in _load_individual_task_or_group
+    return _load_task(task_config, task=name_or_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/tasks/__init__.py", line 259, in _load_task
+    task_object = ConfigurableTask(config=config, model_name=self.model_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/repo/src/lmms_eval/api/task.py", line 720, in __init__
+    self.download(self.config.dataset_kwargs)
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 330, in wrapped_f
+    return self(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 467, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 368, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/anujaya/ransadi/SpatialStack/env/lib/python3.12/site-packages/tenacity/__init__.py", line 411, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x7a10920982c0 state=finished raised ConnectionError>]
+[32m2026-11-24 13:26:40.622 +05:30[0m | [31m[1mERROR   [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m394[0m - [31m[1mError during evaluation: RetryError[<Future at 0x7a10920982c0 state=finished raised ConnectionError>]. Please set `--verbosity=DEBUG` to get more information.[0m

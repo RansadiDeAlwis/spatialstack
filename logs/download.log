@@ -1,0 +1,396 @@
+=== 12:51:30 Journey9ni/SpatialStack-Qwen3.5-4B
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Downloading 'tokenizer.json' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Journey9ni--SpatialStack-Qwen3.5-4B/blobs/87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4.incomplete'
+Downloading 'model.safetensors' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Journey9ni--SpatialStack-Qwen3.5-4B/blobs/9ec8b713bcc36a9db80a0181dbcf5353a5a60d8ef8f2464cb5a3f6f3d781d6ad.incomplete'
+Downloading 'README.md' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Journey9ni--SpatialStack-Qwen3.5-4B/blobs/b5baca37ee56d1fc735b27c689a15e7245afa81a.incomplete'
+Downloading 'processor_config.json' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Journey9ni--SpatialStack-Qwen3.5-4B/blobs/c626c506df95f9df9c0b52c5a5f019bb8bbbc46b.incomplete'
+Downloading 'config.json' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Journey9ni--SpatialStack-Qwen3.5-4B/blobs/723ee5bd8c7c5be27a7b6428fcfc9844567454d6.incomplete'
+Downloading 'chat_template.jinja' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Journey9ni--SpatialStack-Qwen3.5-4B/blobs/a585dec894e63da457d9440ec6aa7caa16d20860.incomplete'
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Journey9ni--SpatialStack-Qwen3.5-4B/blobs/723ee5bd8c7c5be27a7b6428fcfc9844567454d6
+Downloading '.gitattributes' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Journey9ni--SpatialStack-Qwen3.5-4B/blobs/52373fe24473b1aa44333d318f578ae6bf04b49b.incomplete'
+Downloading 'generation_config.json' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Journey9ni--SpatialStack-Qwen3.5-4B/blobs/e86761049bd75cd8b16328ab5ba5fd44c2d6acdf.incomplete'
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Journey9ni--SpatialStack-Qwen3.5-4B/blobs/b5baca37ee56d1fc735b27c689a15e7245afa81a
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Journey9ni--SpatialStack-Qwen3.5-4B/blobs/c626c506df95f9df9c0b52c5a5f019bb8bbbc46b
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Journey9ni--SpatialStack-Qwen3.5-4B/blobs/a585dec894e63da457d9440ec6aa7caa16d20860
+Downloading 'tokenizer_config.json' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Journey9ni--SpatialStack-Qwen3.5-4B/blobs/177250a887b3b64a20ef5c222c67310d26636109.incomplete'
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Journey9ni--SpatialStack-Qwen3.5-4B/blobs/177250a887b3b64a20ef5c222c67310d26636109
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Journey9ni--SpatialStack-Qwen3.5-4B/blobs/52373fe24473b1aa44333d318f578ae6bf04b49b
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Journey9ni--SpatialStack-Qwen3.5-4B/blobs/e86761049bd75cd8b16328ab5ba5fd44c2d6acdf
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Journey9ni--SpatialStack-Qwen3.5-4B/blobs/87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4
+Fetching 9 files:  89%|████████▉ | 8/9 [00:02<00:00,  3.20it/s]Fetching 9 files:  89%|████████▉ | 8/9 [00:20<00:02,  2.50s/it]Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Journey9ni--SpatialStack-Qwen3.5-4B/blobs/9ec8b713bcc36a9db80a0181dbcf5353a5a60d8ef8f2464cb5a3f6f3d781d6ad
+Fetching 9 files: 100%|██████████| 9/9 [04:45<00:00, 31.76s/it]Fetching 9 files: 100%|██████████| 9/9 [04:45<00:00, 31.76s/it]
+/home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Journey9ni--SpatialStack-Qwen3.5-4B/snapshots/777b2289252f7c78628e0f8ac63ffddf50fe7f7b
+=== 12:56:16 facebook/VGGT-1B --include config.json model.safetensors README.md
+Fetching 3 files:   0%|          | 0/3 [00:00<?, ?it/s]Downloading 'model.safetensors' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--facebook--VGGT-1B/blobs/f164acf60724910d8fe1578bb499d800850c7bb0948db7555c413f9fbe60467e.incomplete'
+Downloading 'config.json' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--facebook--VGGT-1B/blobs/303bf21400e2723e8ff9c0c7ceb6d86859b1ddeb.incomplete'
+Downloading 'README.md' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--facebook--VGGT-1B/blobs/b8e9a3f570877961599dc5ca652630296467f7a5.incomplete'
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--facebook--VGGT-1B/blobs/303bf21400e2723e8ff9c0c7ceb6d86859b1ddeb
+Fetching 3 files:  33%|███▎      | 1/3 [00:00<00:01,  1.51it/s]Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--facebook--VGGT-1B/blobs/b8e9a3f570877961599dc5ca652630296467f7a5
+Fetching 3 files:  67%|██████▋   | 2/3 [00:00<00:00,  2.27it/s]Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--facebook--VGGT-1B/blobs/f164acf60724910d8fe1578bb499d800850c7bb0948db7555c413f9fbe60467e
+Fetching 3 files: 100%|██████████| 3/3 [02:00<00:00, 40.17s/it]Fetching 3 files: 100%|██████████| 3/3 [02:00<00:00, 40.17s/it]
+/home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--facebook--VGGT-1B/snapshots/860abec7937da0a4c03c41d3c269c366e82abdf9
+=== 12:58:17 Qwen/Qwen3.5-4B
+Fetching 14 files:   0%|          | 0/14 [00:00<?, ?it/s]Downloading 'model.safetensors-00001-of-00002.safetensors' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Qwen--Qwen3.5-4B/blobs/26a93f066e1916adb13453dae5a0c707c0fbc71299ed98779571a907b8e74c61.incomplete'
+Downloading 'model.safetensors-00002-of-00002.safetensors' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Qwen--Qwen3.5-4B/blobs/cb544bd9bfae93dc59b0f22b292f5933573854a7f9b97835c67060d7d910e188.incomplete'
+Downloading 'README.md' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Qwen--Qwen3.5-4B/blobs/7950a3aadf378cd13758097bc52f0ed849a59007.incomplete'
+Downloading 'chat_template.jinja' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Qwen--Qwen3.5-4B/blobs/a585dec894e63da457d9440ec6aa7caa16d20860.incomplete'
+Downloading 'merges.txt' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Qwen--Qwen3.5-4B/blobs/a494e019ca1502219fd0128658b979e5f05ae8e8.incomplete'
+Downloading '.gitattributes' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Qwen--Qwen3.5-4B/blobs/52373fe24473b1aa44333d318f578ae6bf04b49b.incomplete'
+Downloading 'LICENSE' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Qwen--Qwen3.5-4B/blobs/f938136e3adacfd92be087f6e113b5d6d97f678f.incomplete'
+Downloading 'config.json' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Qwen--Qwen3.5-4B/blobs/557d961b205319c6a7da5f757f565b69b3967b7d.incomplete'
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Qwen--Qwen3.5-4B/blobs/a585dec894e63da457d9440ec6aa7caa16d20860
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Qwen--Qwen3.5-4B/blobs/557d961b205319c6a7da5f757f565b69b3967b7d
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Qwen--Qwen3.5-4B/blobs/7950a3aadf378cd13758097bc52f0ed849a59007
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Qwen--Qwen3.5-4B/blobs/52373fe24473b1aa44333d318f578ae6bf04b49b
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Qwen--Qwen3.5-4B/blobs/f938136e3adacfd92be087f6e113b5d6d97f678f
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Qwen--Qwen3.5-4B/blobs/a494e019ca1502219fd0128658b979e5f05ae8e8
+Downloading 'tokenizer.json' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Qwen--Qwen3.5-4B/blobs/5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42.incomplete'
+Downloading 'preprocessor_config.json' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Qwen--Qwen3.5-4B/blobs/2ea84a437d448ff71b08df68fdd949d5cc4ebb64.incomplete'
+Downloading 'video_preprocessor_config.json' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Qwen--Qwen3.5-4B/blobs/3ba673a5ad7d4d13f54155ecd38b2a94a6dac8fe.incomplete'
+Downloading 'tokenizer_config.json' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Qwen--Qwen3.5-4B/blobs/eda48d3e75a8e59a8479ee4ec8b37f76e711d9c1.incomplete'
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Qwen--Qwen3.5-4B/blobs/3ba673a5ad7d4d13f54155ecd38b2a94a6dac8fe
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Qwen--Qwen3.5-4B/blobs/eda48d3e75a8e59a8479ee4ec8b37f76e711d9c1
+Fetching 14 files:  57%|█████▋    | 8/14 [00:00<00:00,  9.29it/s]Downloading 'model.safetensors.index.json' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Qwen--Qwen3.5-4B/blobs/fddda6039f7c1d17260c9e923b8a72fd025d9a86.incomplete'
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Qwen--Qwen3.5-4B/blobs/fddda6039f7c1d17260c9e923b8a72fd025d9a86
+Downloading 'vocab.json' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Qwen--Qwen3.5-4B/blobs/0aa0ce0658d60ac4a5d609f4eadb0e8e43514176.incomplete'
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Qwen--Qwen3.5-4B/blobs/2ea84a437d448ff71b08df68fdd949d5cc4ebb64
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Qwen--Qwen3.5-4B/blobs/0aa0ce0658d60ac4a5d609f4eadb0e8e43514176
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Qwen--Qwen3.5-4B/blobs/5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42
+Fetching 14 files:  86%|████████▌ | 12/14 [00:20<00:03,  1.67s/it]Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Qwen--Qwen3.5-4B/blobs/cb544bd9bfae93dc59b0f22b292f5933573854a7f9b97835c67060d7d910e188
+Fetching 14 files:  93%|█████████▎| 13/14 [01:25<00:06,  6.59s/it]Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Qwen--Qwen3.5-4B/blobs/26a93f066e1916adb13453dae5a0c707c0fbc71299ed98779571a907b8e74c61
+Fetching 14 files: 100%|██████████| 14/14 [01:31<00:00,  6.57s/it]Fetching 14 files: 100%|██████████| 14/14 [01:31<00:00,  6.57s/it]
+/home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Qwen--Qwen3.5-4B/snapshots/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a
+=== 12:59:50 Journey9ni/SpatialStackData --repo-type dataset --include *.json --local-dir /home/anujaya/ransadi/SpatialStack/repo/data/annotations
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Downloading 'merged_qa_scannet_train.json' to '/home/anujaya/ransadi/SpatialStack/repo/data/annotations/.cache/huggingface/download/GOv1I92ZtFx1jn9T4p1S5PHyPsg=.6cf0368fc34124cd9a3c60077a84704f04a0829bf9ee8296d35bb8242fd9df1e.incomplete'
+Downloading 'spar_234k.json' to '/home/anujaya/ransadi/SpatialStack/repo/data/annotations/.cache/huggingface/download/4jMwHM9IyIO1rFIZGP9EdqHCvIA=.56a98565200261b27f4c048b6fdd52491f4401ba8901c55a1be78c99757c08d4.incomplete'
+Downloading 'llava_hound_64k.json' to '/home/anujaya/ransadi/SpatialStack/repo/data/annotations/.cache/huggingface/download/WatExbLzGx5xzyKZIMWm6UMWdEg=.cf7c4ac7a825d38cba89aac709497e65f1c3d6537fa3e9f5f4a266348f352c2a.incomplete'
+Downloading 'vsi_appearance_order_vsibench_scannet.json' to '/home/anujaya/ransadi/SpatialStack/repo/data/annotations/.cache/huggingface/download/DNDuu_C-dxe7uyPDau2zjcL-_Eg=.ba2b923c0397501c6fcfa692a540cf6e64a7d148.incomplete'
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/data/annotations/vsi_appearance_order_vsibench_scannet.json
+Fetching 4 files:  25%|██▌       | 1/4 [00:01<00:03,  1.06s/it]Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/data/annotations/merged_qa_scannet_train.json
+Fetching 4 files:  50%|█████     | 2/4 [00:02<00:02,  1.47s/it]Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/data/annotations/llava_hound_64k.json
+Fetching 4 files:  75%|███████▌  | 3/4 [00:03<00:01,  1.08s/it]Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/data/annotations/spar_234k.json
+Fetching 4 files: 100%|██████████| 4/4 [00:04<00:00,  1.22s/it]Fetching 4 files: 100%|██████████| 4/4 [00:04<00:00,  1.22s/it]
+/home/anujaya/ransadi/SpatialStack/repo/data/annotations
+=== 12:59:55 nyu-visionx/VSI-Bench --repo-type dataset
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Downloading 'scannetpp.zip' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--VSI-Bench/blobs/164b2314107e070c7d8a652897404904adf36a8868c2293be04382727d9a19be.incomplete'
+Downloading 'scannet.zip' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--VSI-Bench/blobs/787b0c061bde5c1f5e076012c1239340fdb1330787c644977c7cad5cdbe1d548.incomplete'
+Downloading 'arkitscenes.zip' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--VSI-Bench/blobs/005232fa20ccfa287255ca96c4d0c0c0863c24bdc1a40a89165b75f509bf4907.incomplete'
+Downloading 'test.jsonl' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--VSI-Bench/blobs/1097e9deb922d63745169bc649fa4a77f8e80f12.incomplete'
+Downloading '.gitattributes' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--VSI-Bench/blobs/1ef325f1b111266a6b26e0196871bd78baa8c2f3.incomplete'
+Downloading 'create_pq.py' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--VSI-Bench/blobs/a1b7c47423f509d2a377f33794abe398557cd98e.incomplete'
+Downloading 'README.md' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--VSI-Bench/blobs/b233fa832704220e2009dc9be27532205e79aca9.incomplete'
+Downloading 'pruned_ids.txt' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--VSI-Bench/blobs/300da8e38112fe1fbece55b3969e4ebb50ef3ca6.incomplete'
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--VSI-Bench/blobs/b233fa832704220e2009dc9be27532205e79aca9
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--VSI-Bench/blobs/a1b7c47423f509d2a377f33794abe398557cd98e
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--VSI-Bench/blobs/1ef325f1b111266a6b26e0196871bd78baa8c2f3
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--VSI-Bench/blobs/300da8e38112fe1fbece55b3969e4ebb50ef3ca6
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--VSI-Bench/blobs/1097e9deb922d63745169bc649fa4a77f8e80f12
+Downloading 'test_debiased.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--VSI-Bench/blobs/dd4fcb087f724652f9f178af4ff6ebf2be1eb11bf7ffba51ce2b8396329ee9e1.incomplete'
+Downloading 'test_pruned.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--VSI-Bench/blobs/b029b219535db754c49b967a1739eb878078796eae3bc8b1252ea9d55cd7f5cc.incomplete'
+Fetching 10 files:  50%|█████     | 5/10 [00:20<00:20,  4.00s/it]Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--VSI-Bench/blobs/b029b219535db754c49b967a1739eb878078796eae3bc8b1252ea9d55cd7f5cc
+Fetching 10 files:  60%|██████    | 6/10 [00:21<00:14,  3.52s/it]Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--VSI-Bench/blobs/dd4fcb087f724652f9f178af4ff6ebf2be1eb11bf7ffba51ce2b8396329ee9e1
+Fetching 10 files:  70%|███████   | 7/10 [00:21<00:09,  3.09s/it]Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--VSI-Bench/blobs/164b2314107e070c7d8a652897404904adf36a8868c2293be04382727d9a19be
+Fetching 10 files:  80%|████████  | 8/10 [00:56<00:14,  7.11s/it]Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--VSI-Bench/blobs/005232fa20ccfa287255ca96c4d0c0c0863c24bdc1a40a89165b75f509bf4907
+Fetching 10 files:  90%|█████████ | 9/10 [01:05<00:07,  7.24s/it]Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--VSI-Bench/blobs/787b0c061bde5c1f5e076012c1239340fdb1330787c644977c7cad5cdbe1d548
+Fetching 10 files: 100%|██████████| 10/10 [01:05<00:00,  6.57s/it]Fetching 10 files: 100%|██████████| 10/10 [01:05<00:00,  6.57s/it]
+/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--VSI-Bench/snapshots/3a6a1cf9ac54c403509b15260897cc6ddc41b408
+=== 13:01:01 nyu-visionx/CV-Bench --repo-type dataset
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Downloading 'test_3d.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--CV-Bench/blobs/ef91fe8b5392eb2a16e318ca68fa02449d45ba1e152afece12a0a526e9fbbc25.incomplete'
+Downloading 'test_2d.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--CV-Bench/blobs/33196034ef4bf3265cae4a7ff5c4071b2ff1cc21123e8e285c6a91393897ecbc.incomplete'
+Downloading 'test_2d.jsonl' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--CV-Bench/blobs/15b1b7dee839c7fd387cf44fb255af93d2c03b24.incomplete'
+Downloading 'build_img.py' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--CV-Bench/blobs/ef3810705f8c5269ae9539a939def48499efdb48.incomplete'
+Downloading 'README.md' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--CV-Bench/blobs/68c291f087b32de3464cb19a2a53796e83612245.incomplete'
+Downloading 'test_3d.jsonl' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--CV-Bench/blobs/c380dbca0bf89f23f22b619729afa776ce3248a3.incomplete'
+Downloading '.gitattributes' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--CV-Bench/blobs/28df5f900b358436f0267334b3e3e9af33f917ba.incomplete'
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--CV-Bench/blobs/ef3810705f8c5269ae9539a939def48499efdb48
+Fetching 7 files:  14%|█▍        | 1/7 [00:00<00:05,  1.10it/s]Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--CV-Bench/blobs/68c291f087b32de3464cb19a2a53796e83612245
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--CV-Bench/blobs/15b1b7dee839c7fd387cf44fb255af93d2c03b24
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--CV-Bench/blobs/28df5f900b358436f0267334b3e3e9af33f917ba
+Fetching 7 files:  57%|█████▋    | 4/7 [00:01<00:00,  3.80it/s]Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--CV-Bench/blobs/c380dbca0bf89f23f22b619729afa776ce3248a3
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--CV-Bench/blobs/33196034ef4bf3265cae4a7ff5c4071b2ff1cc21123e8e285c6a91393897ecbc
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--CV-Bench/blobs/ef91fe8b5392eb2a16e318ca68fa02449d45ba1e152afece12a0a526e9fbbc25
+Fetching 7 files: 100%|██████████| 7/7 [00:12<00:00,  1.80s/it]Fetching 7 files: 100%|██████████| 7/7 [00:12<00:00,  1.80s/it]
+/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--CV-Bench/snapshots/bc284db50d036958861cb60cdd7b77612052ce0d
+=== 13:01:15 BLINK-Benchmark/BLINK --repo-type dataset
+Fetching 34 files:   0%|          | 0/34 [00:00<?, ?it/s]Downloading 'Art_Style/val-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/9400707b7d0e54809146f0f6e9eec058803bef7f50b58b7d21c75b95b90e37d4.incomplete'
+Downloading 'Forensic_Detection/test-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/f2a95c7255d3dac2fadbb33480e5dfc11fa814c431da99fa56367b0bb5642037.incomplete'
+Downloading 'Counting/val-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/7404d7b8e3c4a97a9ab5015739ad3b76a505bbe073286c8c3412f60f4d2b13e5.incomplete'
+Downloading 'Forensic_Detection/val-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/48499d694cfffe81fa1eac3dcb1a84804d30cee8ffb501d7ff7020d8c20dd00c.incomplete'
+Downloading 'Art_Style/test-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/f5ec715865314dc16715fa163d078319453358df4ff28796599df7298ac66fdc.incomplete'
+Downloading 'Counting/test-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/595801ca8aceaf4582e6b6f93f6375987a17144603d539090b60d9261145247d.incomplete'
+Downloading 'Functional_Correspondence/test-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/c71cd03552f2e507a5071656f9aa5a5786fabd205e9642759621646de5b114ef.incomplete'
+Downloading '.gitattributes' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/28df5f900b358436f0267334b3e3e9af33f917ba.incomplete'
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/28df5f900b358436f0267334b3e3e9af33f917ba
+Downloading 'Functional_Correspondence/val-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/fa3b85a94002be63939088627224d53bca84b20efcebb2cfa95fd246004514c1.incomplete'
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/595801ca8aceaf4582e6b6f93f6375987a17144603d539090b60d9261145247d
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/7404d7b8e3c4a97a9ab5015739ad3b76a505bbe073286c8c3412f60f4d2b13e5
+Downloading 'IQ_Test/test-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/b554661983fddc53b07d80a399ea7f5a2e7766543aecac921b13dab34a0fb4f4.incomplete'
+Downloading 'IQ_Test/val-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/5753ee46f95354f5d3207ff51df6cb0a70a3ffd63114e80718ab465a3997ca61.incomplete'
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/48499d694cfffe81fa1eac3dcb1a84804d30cee8ffb501d7ff7020d8c20dd00c
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/f2a95c7255d3dac2fadbb33480e5dfc11fa814c431da99fa56367b0bb5642037
+Downloading 'Jigsaw/test-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/374f9bd343c3dfec1edecd0eaec9e2a7543f769649d556fc801fa33dfef0b38a.incomplete'
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/c71cd03552f2e507a5071656f9aa5a5786fabd205e9642759621646de5b114ef
+Downloading 'Jigsaw/val-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/cf6ae1c48389667e0c245e56c48479f86e9f0bc1f5d33f0559da5fc2f37b671f.incomplete'
+Downloading 'Multi-view_Reasoning/test-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/968bf7d6f8561ac3a19be69ea969c1de692ad97b0aa28e3a983c05678e08eddb.incomplete'
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/b554661983fddc53b07d80a399ea7f5a2e7766543aecac921b13dab34a0fb4f4
+Downloading 'Multi-view_Reasoning/val-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/f4e81718f844747bce372bcf046ffe207f82a1ea8b7ce308655c11f536114e19.incomplete'
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/5753ee46f95354f5d3207ff51df6cb0a70a3ffd63114e80718ab465a3997ca61
+Fetching 34 files:  24%|██▎       | 8/34 [00:04<00:16,  1.60it/s]Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/cf6ae1c48389667e0c245e56c48479f86e9f0bc1f5d33f0559da5fc2f37b671f
+Downloading 'Object_Localization/val-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/cce5f661cc5c6ddde12d37c2a70e4f7dc4f18e613a5e647d6f5ae35c05799532.incomplete'
+Downloading 'Object_Localization/test-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/60791d98f94be544c178c6a8db77b54750b4afcf8274dd0b445f5ba52f03ec63.incomplete'
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/374f9bd343c3dfec1edecd0eaec9e2a7543f769649d556fc801fa33dfef0b38a
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/968bf7d6f8561ac3a19be69ea969c1de692ad97b0aa28e3a983c05678e08eddb
+Downloading 'Relative_Depth/test-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/f3b98acd1a5ff1cd75875e8a258d9224599054f62a1d08feacec19ab03d45303.incomplete'
+Downloading 'README.md' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/6b072b141748f6ec265b5ccd27ece510fd3497fd.incomplete'
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/6b072b141748f6ec265b5ccd27ece510fd3497fd
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/9400707b7d0e54809146f0f6e9eec058803bef7f50b58b7d21c75b95b90e37d4
+Downloading 'Relative_Depth/val-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/4cd1d5840a2f9e3ad86b310865bd44a29555344b0c6b67b36f9ab1c1029a4d1a.incomplete'
+Fetching 34 files:  47%|████▋     | 16/34 [00:06<00:07,  2.38it/s]Fetching 34 files:  76%|███████▋  | 26/34 [00:06<00:02,  3.87it/s]
+Downloading 'Relative_Reflectance/test-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/b85219e71fecbf6aa4da0e0c2a158f4acd691cdf668af5b9283ffc15a7c895ce.incomplete'
+Downloading 'Relative_Reflectance/val-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/f6d6a7605b50f7283b09b4a2f98f7552bacd6a256ad61e6ecafa12e49b38e3ca.incomplete'
+Downloading 'Semantic_Correspondence/test-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/8dc8065dfe3a0cdab1968e2ce3e8559058244d7684d6046200fd95cc437f97c6.incomplete'
+Traceback (most recent call last):
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/bin/hf", line 10, in <module>
+    sys.exit(main())
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/cli/hf.py", line 59, in main
+    service.run()
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/cli/download.py", line 136, in run
+    print(self._download())  # Print path to downloaded files
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/cli/download.py", line 169, in _download
+    return snapshot_download(
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/_snapshot_download.py", line 332, in snapshot_download
+    thread_map(
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/tqdm/contrib/concurrent.py", line 191, in thread_map
+    return _executor_map(ThreadPoolExecutor, fn, *iterables, **tqdm_kwargs)
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/tqdm/contrib/concurrent.py", line 163, in _executor_map
+    return list(ex.map(
+  File "/home/anujaya/miniconda3/lib/python3.10/concurrent/futures/_base.py", line 621, in result_iterator
+    yield _result_or_cancel(fs.pop())
+  File "/home/anujaya/miniconda3/lib/python3.10/concurrent/futures/_base.py", line 319, in _result_or_cancel
+    return fut.result(timeout)
+  File "/home/anujaya/miniconda3/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/home/anujaya/miniconda3/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/anujaya/miniconda3/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/_snapshot_download.py", line 306, in _inner_hf_hub_download
+    return hf_hub_download(
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1007, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1168, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1720, in _download_to_tmp_and_move
+    xet_get(
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 626, in xet_get
+    download_files(
+OSError: I/O error: IO Error: Disk quota exceeded (os error 122)
+retry 1
+Fetching 34 files:   0%|          | 0/34 [00:00<?, ?it/s]Downloading 'Relative_Depth/test-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/f3b98acd1a5ff1cd75875e8a258d9224599054f62a1d08feacec19ab03d45303.incomplete'
+Downloading 'Multi-view_Reasoning/val-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/f4e81718f844747bce372bcf046ffe207f82a1ea8b7ce308655c11f536114e19.incomplete'
+Downloading 'Object_Localization/test-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/60791d98f94be544c178c6a8db77b54750b4afcf8274dd0b445f5ba52f03ec63.incomplete'
+Downloading 'Art_Style/test-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/f5ec715865314dc16715fa163d078319453358df4ff28796599df7298ac66fdc.incomplete' (resume from 81788928/144684586)
+Downloading 'Object_Localization/val-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/cce5f661cc5c6ddde12d37c2a70e4f7dc4f18e613a5e647d6f5ae35c05799532.incomplete' (resume from 524288/6196076)
+Downloading 'Functional_Correspondence/val-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/fa3b85a94002be63939088627224d53bca84b20efcebb2cfa95fd246004514c1.incomplete'
+Downloading 'Relative_Depth/val-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/4cd1d5840a2f9e3ad86b310865bd44a29555344b0c6b67b36f9ab1c1029a4d1a.incomplete'
+Downloading 'Relative_Reflectance/test-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/b85219e71fecbf6aa4da0e0c2a158f4acd691cdf668af5b9283ffc15a7c895ce.incomplete'
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/4cd1d5840a2f9e3ad86b310865bd44a29555344b0c6b67b36f9ab1c1029a4d1a
+Fetching 34 files:  41%|████      | 14/34 [00:02<00:03,  6.60it/s]Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/f3b98acd1a5ff1cd75875e8a258d9224599054f62a1d08feacec19ab03d45303
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/60791d98f94be544c178c6a8db77b54750b4afcf8274dd0b445f5ba52f03ec63
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/cce5f661cc5c6ddde12d37c2a70e4f7dc4f18e613a5e647d6f5ae35c05799532
+Downloading 'Relative_Reflectance/val-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/f6d6a7605b50f7283b09b4a2f98f7552bacd6a256ad61e6ecafa12e49b38e3ca.incomplete'
+Downloading 'Semantic_Correspondence/test-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/8dc8065dfe3a0cdab1968e2ce3e8559058244d7684d6046200fd95cc437f97c6.incomplete'
+Downloading 'Semantic_Correspondence/val-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/83b9882aca27f740e32d8973c2454e8b78203d3958d189cb5a5fe00a34b88e05.incomplete'
+Downloading 'Spatial_Relation/test-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/9babeebfde626046c964f6995b5be4c89d9f879a6752df0b6937a7883d172c44.incomplete'
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/f4e81718f844747bce372bcf046ffe207f82a1ea8b7ce308655c11f536114e19
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/b85219e71fecbf6aa4da0e0c2a158f4acd691cdf668af5b9283ffc15a7c895ce
+Downloading 'Visual_Correspondence/test-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/69ba38eae99dac7f6a39d2d534e9424d47ff5f47b61237318650a667da0a3671.incomplete'
+Downloading 'Spatial_Relation/val-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/7ce3f778ac870af32151eb8a71512c203314404bd0d903f3bff6c80ff89322c2.incomplete'
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/fa3b85a94002be63939088627224d53bca84b20efcebb2cfa95fd246004514c1
+Downloading 'Visual_Correspondence/val-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/c7c54374f3016df3781d306890c8921ed04ef5b8abd3fa404c6560b2f503d827.incomplete'
+Downloading 'Visual_Similarity/test-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/f320e028e46d520e91603b3adf80c2f1f0f9b94fe963a263242a2ccd6cc574e5.incomplete'
+Downloading 'Visual_Similarity/val-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/15857cd004055977c2486e39523a913762e9e6551603bc57b5bc097a70d19aa0.incomplete'
+Downloading 'assets/blink-removebg-preview.png' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/4a1d439e91eb92cb6b11ce11be2418c5d8e73ddd33da3d30d511c75e8b3a04f7.incomplete'
+Fetching 34 files:  76%|███████▋  | 26/34 [00:06<00:02,  3.92it/s]
+Downloading 'assets/comparison.png' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/5082f00a871aaaf9384ba37e91f4c483824577383d752f9bba2ae96c31ccf3ef.incomplete'
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/4a1d439e91eb92cb6b11ce11be2418c5d8e73ddd33da3d30d511c75e8b3a04f7
+Traceback (most recent call last):
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/bin/hf", line 10, in <module>
+    sys.exit(main())
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/cli/hf.py", line 59, in main
+    service.run()
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/cli/download.py", line 136, in run
+    print(self._download())  # Print path to downloaded files
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/cli/download.py", line 169, in _download
+    return snapshot_download(
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/_snapshot_download.py", line 332, in snapshot_download
+    thread_map(
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/tqdm/contrib/concurrent.py", line 191, in thread_map
+    return _executor_map(ThreadPoolExecutor, fn, *iterables, **tqdm_kwargs)
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/tqdm/contrib/concurrent.py", line 163, in _executor_map
+    return list(ex.map(
+  File "/home/anujaya/miniconda3/lib/python3.10/concurrent/futures/_base.py", line 621, in result_iterator
+    yield _result_or_cancel(fs.pop())
+  File "/home/anujaya/miniconda3/lib/python3.10/concurrent/futures/_base.py", line 319, in _result_or_cancel
+    return fut.result(timeout)
+  File "/home/anujaya/miniconda3/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/home/anujaya/miniconda3/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/anujaya/miniconda3/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/_snapshot_download.py", line 306, in _inner_hf_hub_download
+    return hf_hub_download(
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1007, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1168, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1720, in _download_to_tmp_and_move
+    xet_get(
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 626, in xet_get
+    download_files(
+OSError: I/O error: IO Error: Disk quota exceeded (os error 122)
+retry 2
+Fetching 34 files:   0%|          | 0/34 [00:00<?, ?it/s]Downloading 'Visual_Correspondence/val-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/c7c54374f3016df3781d306890c8921ed04ef5b8abd3fa404c6560b2f503d827.incomplete'
+Downloading 'Art_Style/test-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/f5ec715865314dc16715fa163d078319453358df4ff28796599df7298ac66fdc.incomplete'
+Downloading 'Relative_Reflectance/val-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/f6d6a7605b50f7283b09b4a2f98f7552bacd6a256ad61e6ecafa12e49b38e3ca.incomplete' (resume from 6291456/18539198)
+Downloading 'Spatial_Relation/test-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/9babeebfde626046c964f6995b5be4c89d9f879a6752df0b6937a7883d172c44.incomplete'
+Downloading 'Spatial_Relation/val-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/7ce3f778ac870af32151eb8a71512c203314404bd0d903f3bff6c80ff89322c2.incomplete'
+Downloading 'Semantic_Correspondence/val-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/83b9882aca27f740e32d8973c2454e8b78203d3958d189cb5a5fe00a34b88e05.incomplete'
+Downloading 'Semantic_Correspondence/test-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/8dc8065dfe3a0cdab1968e2ce3e8559058244d7684d6046200fd95cc437f97c6.incomplete'
+Downloading 'Visual_Correspondence/test-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/69ba38eae99dac7f6a39d2d534e9424d47ff5f47b61237318650a667da0a3671.incomplete'
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/7ce3f778ac870af32151eb8a71512c203314404bd0d903f3bff6c80ff89322c2
+Fetching 34 files:  62%|██████▏   | 21/34 [00:02<00:01,  8.38it/s]Downloading 'Visual_Similarity/test-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/f320e028e46d520e91603b3adf80c2f1f0f9b94fe963a263242a2ccd6cc574e5.incomplete'
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/69ba38eae99dac7f6a39d2d534e9424d47ff5f47b61237318650a667da0a3671
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/f6d6a7605b50f7283b09b4a2f98f7552bacd6a256ad61e6ecafa12e49b38e3ca
+Downloading 'Visual_Similarity/val-00000-of-00001.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/15857cd004055977c2486e39523a913762e9e6551603bc57b5bc097a70d19aa0.incomplete'
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/83b9882aca27f740e32d8973c2454e8b78203d3958d189cb5a5fe00a34b88e05
+Downloading 'assets/comparison.png' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/5082f00a871aaaf9384ba37e91f4c483824577383d752f9bba2ae96c31ccf3ef.incomplete'
+Downloading 'assets/radar_v1.png' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/0103088a7824fe3fc93c8e72710bdea01b0c0bbf6cd9ef2d7c8da8823c8a5533.incomplete'
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/c7c54374f3016df3781d306890c8921ed04ef5b8abd3fa404c6560b2f503d827
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/0103088a7824fe3fc93c8e72710bdea01b0c0bbf6cd9ef2d7c8da8823c8a5533
+Downloading 'assets/teaser.png' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/18c541123b7a57e26d4d5fd98432f24f75a4e5343862c7d926842ddfc7d5957b.incomplete'
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/5082f00a871aaaf9384ba37e91f4c483824577383d752f9bba2ae96c31ccf3ef
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/f5ec715865314dc16715fa163d078319453358df4ff28796599df7298ac66fdc
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/f320e028e46d520e91603b3adf80c2f1f0f9b94fe963a263242a2ccd6cc574e5
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/18c541123b7a57e26d4d5fd98432f24f75a4e5343862c7d926842ddfc7d5957b
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/8dc8065dfe3a0cdab1968e2ce3e8559058244d7684d6046200fd95cc437f97c6
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/9babeebfde626046c964f6995b5be4c89d9f879a6752df0b6937a7883d172c44
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/blobs/15857cd004055977c2486e39523a913762e9e6551603bc57b5bc097a70d19aa0
+Fetching 34 files: 100%|██████████| 34/34 [00:09<00:00,  3.62it/s]
+/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK/snapshots/a3666eb249237ba3d5eca8db21176cc47967e040
+=== 13:02:05 jasonzhango/SPAR-Bench --repo-type dataset
+Fetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]Downloading 'data/test-00001-of-00004.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--jasonzhango--SPAR-Bench/blobs/1e8a8fe98a11f94ada2cd17d76224c3fe8155e4c489f0b9778a5dd955aa3c4f9.incomplete'
+Downloading 'data/test-00003-of-00004.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--jasonzhango--SPAR-Bench/blobs/6039332cfba99512694293b61f10c44f98e8b7d445d62dff5739e9540cdb8ced.incomplete'
+Downloading 'data/test-00000-of-00004.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--jasonzhango--SPAR-Bench/blobs/5dcea1f9f50a7f4a2834e6fe7589004882ae2c5cffdd477f453931aa313282f4.incomplete'
+Downloading 'data/test-00002-of-00004.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--jasonzhango--SPAR-Bench/blobs/f272b8c490a1fd38cb83b4951e5740fa0df7746ac1190ac2841f22eae77f4935.incomplete'
+Downloading 'README.md' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--jasonzhango--SPAR-Bench/blobs/a9007dde81ec7b975c29e31c378a3549c464af3e.incomplete'
+Downloading '.gitattributes' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--jasonzhango--SPAR-Bench/blobs/1ef325f1b111266a6b26e0196871bd78baa8c2f3.incomplete'
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--jasonzhango--SPAR-Bench/blobs/a9007dde81ec7b975c29e31c378a3549c464af3e
+Fetching 6 files:  17%|█▋        | 1/6 [00:00<00:04,  1.09it/s]Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--jasonzhango--SPAR-Bench/blobs/1ef325f1b111266a6b26e0196871bd78baa8c2f3
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--jasonzhango--SPAR-Bench/blobs/5dcea1f9f50a7f4a2834e6fe7589004882ae2c5cffdd477f453931aa313282f4
+Fetching 6 files:  50%|█████     | 3/6 [00:10<00:10,  3.38s/it]Fetching 6 files:  83%|████████▎ | 5/6 [00:22<00:04,  4.44s/it]Fetching 6 files: 100%|██████████| 6/6 [00:22<00:00,  3.82s/it]Fetching 6 files: 100%|██████████| 6/6 [00:22<00:00,  3.82s/it]
+Traceback (most recent call last):
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/bin/hf", line 10, in <module>
+    sys.exit(main())
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/cli/hf.py", line 59, in main
+    service.run()
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/cli/download.py", line 136, in run
+    print(self._download())  # Print path to downloaded files
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/cli/download.py", line 169, in _download
+    return snapshot_download(
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/_snapshot_download.py", line 332, in snapshot_download
+    thread_map(
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/tqdm/contrib/concurrent.py", line 191, in thread_map
+    return _executor_map(ThreadPoolExecutor, fn, *iterables, **tqdm_kwargs)
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/tqdm/contrib/concurrent.py", line 163, in _executor_map
+    return list(ex.map(
+  File "/home/anujaya/miniconda3/lib/python3.10/concurrent/futures/_base.py", line 621, in result_iterator
+    yield _result_or_cancel(fs.pop())
+  File "/home/anujaya/miniconda3/lib/python3.10/concurrent/futures/_base.py", line 319, in _result_or_cancel
+    return fut.result(timeout)
+  File "/home/anujaya/miniconda3/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/home/anujaya/miniconda3/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/anujaya/miniconda3/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/_snapshot_download.py", line 306, in _inner_hf_hub_download
+    return hf_hub_download(
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1007, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1168, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1720, in _download_to_tmp_and_move
+    xet_get(
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 626, in xet_get
+    download_files(
+OSError: I/O error: IO Error: Disk quota exceeded (os error 122)
+retry 1
+Fetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]Downloading 'data/test-00002-of-00004.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--jasonzhango--SPAR-Bench/blobs/f272b8c490a1fd38cb83b4951e5740fa0df7746ac1190ac2841f22eae77f4935.incomplete' (resume from 134742016/573247842)
+Downloading 'data/test-00003-of-00004.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--jasonzhango--SPAR-Bench/blobs/6039332cfba99512694293b61f10c44f98e8b7d445d62dff5739e9540cdb8ced.incomplete' (resume from 192937984/670612460)
+Downloading 'data/test-00001-of-00004.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--jasonzhango--SPAR-Bench/blobs/1e8a8fe98a11f94ada2cd17d76224c3fe8155e4c489f0b9778a5dd955aa3c4f9.incomplete' (resume from 256000000/366030961)
+Fetching 6 files:  67%|██████▋   | 4/6 [00:18<00:09,  4.56s/it]Fetching 6 files:  67%|█████�Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Downloading 'MMSI_Bench.parquet' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--RunsenXu--MMSI-Bench/blobs/72a9c94699ca88f3eba79f330ab28965ee537bccd7cbf563265982a6ff8b74b4.incomplete'
+Downloading 'MMSI_bench.tsv' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--RunsenXu--MMSI-Bench/blobs/5435242d20a11c0097afc1e67c4ddc6c55daa7cb5f2478240165c33e4bb07fed.incomplete'
+Downloading '.gitattributes' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--RunsenXu--MMSI-Bench/blobs/983c0b4ad72089447e18c2deca6dbd2ab782e3d5.incomplete'
+Downloading 'README.md' to '/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--RunsenXu--MMSI-Bench/blobs/34134f4353e89d9ed711257dbdf70b328554fd17.incomplete'
+Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--RunsenXu--MMSI-Bench/blobs/983c0b4ad72089447e18c2deca6dbd2ab782e3d5
+Fetching 4 files:  25%|██▌       | 1/4 [00:00<00:01,  2.17it/s]Download complete. Moving file to /home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--RunsenXu--MMSI-Bench/blobs/34134f4353e89d9ed711257dbdf70b328554fd17
+Fetching 4 files:  75%|███████▌  | 3/4 [00:09<00:03,  3.29s/it]Fetching 4 files:  75%|███████▌  | 3/4 [00:09<00:03,  3.29s/it]
+Traceback (most recent call last):
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/bin/hf", line 10, in <module>
+    sys.exit(main())
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/cli/hf.py", line 59, in main
+    service.run()
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/cli/download.py", line 136, in run
+    print(self._download())  # Print path to downloaded files
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/cli/download.py", line 169, in _download
+    return snapshot_download(
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/_snapshot_download.py", line 332, in snapshot_download
+    thread_map(
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/tqdm/contrib/concurrent.py", line 191, in thread_map
+    return _executor_map(ThreadPoolExecutor, fn, *iterables, **tqdm_kwargs)
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/tqdm/contrib/concurrent.py", line 163, in _executor_map
+    return list(ex.map(
+  File "/home/anujaya/miniconda3/lib/python3.10/concurrent/futures/_base.py", line 621, in result_iterator
+    yield _result_or_cancel(fs.pop())
+  File "/home/anujaya/miniconda3/lib/python3.10/concurrent/futures/_base.py", line 319, in _result_or_cancel
+    return fut.result(timeout)
+  File "/home/anujaya/miniconda3/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/home/anujaya/miniconda3/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/anujaya/miniconda3/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/_snapshot_download.py", line 306, in _inner_hf_hub_download
+    return hf_hub_download(
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1007, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+  File "/home/anujaya/venumi/gaussian_cl4d_refactored/.venv/lib/pytretry 3
+FAILED: RunsenXu/MMSI-Bench --repo-type dataset
+=== 13:04:06 ALL DONE
+769M	/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--BLINK-Benchmark--BLINK
+777M	/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--jasonzhango--SPAR-Bench
+12K	/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--Journey9ni--SpatialStackData
+388M	/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--CV-Bench
+5.4G	/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--nyu-visionx--VSI-Bench
+36K	/home/anujaya/ransadi/SpatialStack/repo/cache/hub/datasets--RunsenXu--MMSI-Bench
+4.7G	/home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--facebook--VGGT-1B
+14G	/home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Journey9ni--SpatialStack-Qwen3.5-4B
+8.8G	/home/anujaya/ransadi/SpatialStack/repo/cache/hub/models--Qwen--Qwen3.5-4B
+366M	/home/anujaya/ransadi/SpatialStack/repo/data/annotations

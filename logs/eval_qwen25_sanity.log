@@ -1,0 +1,55 @@
+[INFO] cuda_home=/home/anujaya/ransadi/SpatialStack/env
+[INFO] hf_home=/home/anujaya/ransadi/SpatialStack/repo/cache/hf-home
+[INFO] hf_hub_cache=/home/anujaya/ransadi/SpatialStack/repo/cache/hub
+[INFO] hf_datasets_cache=/home/anujaya/ransadi/SpatialStack/repo/cache/datasets_qwen25
+[INFO] triton_cache_dir=/tmp/anujaya/spatialstack-triton/manual/0
+[32m2026-11-25 05:28:20.348 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m335[0m - [1mVerbosity set to INFO[0m
+[32m2026-11-25 05:28:20.419 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m423[0m - [1mEvaluation tracker args: {'output_path': '/home/anujaya/ransadi/SpatialStack/results/qwen25_limit4/cvbench'}[0m
+[32m2026-11-25 05:28:20.419 +05:30[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m445[0m - [33m[1m --limit SHOULD ONLY BE USED FOR TESTING.REAL METRICS SHOULD NOT BE COMPUTED USING LIMIT.[0m
+[32m2026-11-25 05:28:20.419 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m514[0m - [1mSelected Tasks: ['cvbench'][0m
+[32m2026-11-25 05:28:20.420 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36msimple_evaluate[0m:[36m155[0m - [1mSetting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234[0m
+Warning: FlashAttention 3 is not available, falling back to PyTorch's scaled_dot_product_attention
+[32m2026-11-25 05:28:24.020 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.models.spatialstack[0m:[36m__init__[0m:[36m87[0m - [1mUsing Qwen2_5_VLForConditionalGenerationWithVGGT[0m
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:02<00:05,  3.00s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:04<00:01,  1.89s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:04<00:00,  1.08s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:04<00:00,  1.41s/it]
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.50, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+[32m2026-11-25 05:28:28.979 +05:30[0m | [33m[1mWARNING [0m | [36mlmms_eval.models.spatialstack[0m:[36m__init__[0m:[36m108[0m - [33m[1mSetting max_length to 12800[0m
+[32m2026-11-25 05:28:29.002 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.evaluator_utils[0m:[36mfrom_taskdict[0m:[36m91[0m - [1mNo metadata found in task config for cvbench, using default n_shot=0[0m
+[32m2026-11-25 05:28:29.003 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m425[0m - [1mBuilding contexts for cvbench on rank 0...[0m
+  0%|          | 0/4 [00:00<?, ?it/s]100%|██████████| 4/4 [00:00<00:00, 12228.29it/s]
+[32m2026-11-25 05:28:29.003 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36mevaluate[0m:[36m447[0m - [1mRunning generate_until requests[0m
+Model Responding:   0%|          | 0/4 [00:00<?, ?it/s]Model Responding:  25%|██▌       | 1/4 [00:01<00:03,  1.20s/it]Model Responding:  50%|█████     | 2/4 [00:01<00:01,  1.27it/s]Model Responding:  75%|███████▌  | 3/4 [00:01<00:00,  1.89it/s]Model Responding: 100%|██████████| 4/4 [00:02<00:00,  2.69it/s]Model Responding: 100%|██████████| 4/4 [00:02<00:00,  1.95it/s]
+Postprocessing:   0%|          | 0/4 [00:00<?, ?it/s]Postprocessing: 100%|██████████| 4/4 [00:00<00:00, 8503.40it/s]
+[32m2026-11-25 05:28:31.264 +05:30[0m | [1mINFO    [0m | [36mutils[0m:[36mcvbench_aggregate_results[0m:[36m90[0m - [1mEvaluation results: {'accuracy_2d': np.float64(nan), 'accuracy_3d': nan, 'combined_accuracy': np.float64(nan), 'Count': np.float64(0.5), 'Relation': nan, 'Distance': nan, 'Depth': nan}[0m
+[32m2026-11-25 05:28:31.267 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.loggers.evaluation_tracker[0m:[36msave_results_aggregated[0m:[36m188[0m - [1mSaving results aggregated[0m
+[32m2026-11-25 05:28:31.267 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.loggers.evaluation_tracker[0m:[36msave_results_samples[0m:[36m255[0m - [1mSaving per-sample results for: cvbench[0m
+spatialstack (pretrained=/mnt/4dgs/spatialstack/models/SpatialStack-Qwen2.5-4B,use_flash_attention_2=true,max_num_frames=32,max_length=12800), gen_kwargs: (), limit: 4.0, num_fewshot: None, batch_size: 1
+| Tasks |Version|Filter|n-shot|   Metric    |   |Value|   |Stderr|
+|-------|-------|------|-----:|-------------|---|-----|---|------|
+|cvbench|Yaml   |none  |     0|cvbench_score|↑  |NaN  |±  |   N/A|
+
+[32m2026-11-25 05:28:35.025 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m335[0m - [1mVerbosity set to INFO[0m
+[32m2026-11-25 05:28:35.096 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m423[0m - [1mEvaluation tracker args: {'output_path': '/home/anujaya/ransadi/SpatialStack/results/qwen25_limit4/vsibench'}[0m
+[32m2026-11-25 05:28:35.096 +05:30[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m445[0m - [33m[1m --limit SHOULD ONLY BE USED FOR TESTING.REAL METRICS SHOULD NOT BE COMPUTED USING LIMIT.[0m
+[32m2026-11-25 05:28:35.097 +05:30[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m514[0m - [1mSelected Tasks: ['vsibench'][0m
+[32m2026-11-25 05:28:35.097 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36msimple_evaluate[0m:[36m155[0m - [1mSetting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234[0m
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files: 100%|██████████| 10/10 [00:00<00:00, 6144.60it/s]
+Warning: FlashAttention 3 is not available, falling back to PyTorch's scaled_dot_product_attention
+[32m2026-11-25 05:28:38.793 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.models.spatialstack[0m:[36m__init__[0m:[36m87[0m - [1mUsing Qwen2_5_VLForConditionalGenerationWithVGGT[0m
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:02<00:05,  2.89s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:04<00:01,  1.85s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:04<00:00,  1.06s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:04<00:00,  1.37s/it]
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.50, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+[32m2026-11-25 05:28:43.663 +05:30[0m | [33m[1mWARNING [0m | [36mlmms_eval.models.spatialstack[0m:[36m__init__[0m:[36m108[0m - [33m[1mSetting max_length to 12800[0m
+[32m2026-11-25 05:28:43.686 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.evaluator_utils[0m:[36mfrom_taskdict[0m:[36m91[0m - [1mNo metadata found in task config for vsibench, using default n_shot=0[0m
+[32m2026-11-25 05:28:43.686 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m425[0m - [1mBuilding contexts for vsibench on rank 0...[0m
+  0%|          | 0/4 [00:00<?, ?it/s]100%|██████████| 4/4 [00:00<00:00, 11162.49it/s]
+[32m2026-11-25 05:28:43.687 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36mevaluate[0m:[36m447[0m - [1mRunning generate_until requests[0m
+Model Responding:   0%|          | 0/4 [00:00<?, ?it/s]Model Responding:  25%|██▌       | 1/4 [00:07<00:21,  7.29s/it]Model Responding:  50%|█████     | 2/4 [00:14<00:14,  7.14s/it]Model Responding:  75%|███████▌  | 3/4 [00:21<00:07,  7.06s/it]Model Responding: 100%|██████████| 4/4 [00:30<00:00,  8.07s/it]Model Responding: 100%|██████████| 4/4 [00:30<00:00,  7.73s/it]
+Postprocessing:   0%|          | 0/4 [00:00<?, ?it/s]Postprocessing: 100%|██████████| 4/4 [00:00<00:00, 6202.30it/s]
+[32m2026-11-25 05:29:15.113 +05:30[0m | [33m[1mWARNING [0m | [36mutils[0m:[36mvsibench_aggregate_results[0m:[36m183[0m - [33m[1mNo object-relative direction accuracies found to aggregate.[0m
+[32m2026-11-25 05:29:15.113 +05:30[0m | [1mINFO    [0m | [36mutils[0m:[36mvsibench_aggregate_results[0m:[36m190[0m - [1mEvaluation results: {'object_counting_MRA:.5:.95:.05': np.float64(0.275), 'overall': np.float64(0.275)}[0m
+[32m2026-11-25 05:29:15.115 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.loggers.evaluation_tracker[0m:[36msave_results_aggregated[0m:[36m188[0m - [1mSaving results aggregated[0m
+[32m2026-11-25 05:29:15.115 +05:30[0m | [1mINFO    [0m | [36mlmms_eval.loggers.evaluation_tracker[0m:[36msave_results_samples[0m:[36m255[0m - [1mSaving per-sample results for: vsibench[0m
+spatialstack (pretrained=/mnt/4dgs/spatialstack/models/SpatialStack-Qwen2.5-4B,use_flash_attention_2=true,max_num_frames=32,max_length=12800), gen_kwargs: (), limit: 4.0, num_fewshot: None, batch_size: 1
+| Tasks  |Version|Filter|n-shot|    Metric    |   |Value|   |Stderr|
+|--------|-------|------|-----:|--------------|---|----:|---|------|
+|vsibench|Yaml   |none  |     0|vsibench_score|↑  | 27.5|±  |   N/A|
+

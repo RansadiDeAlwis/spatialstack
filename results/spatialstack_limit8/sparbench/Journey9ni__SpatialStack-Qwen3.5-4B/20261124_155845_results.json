@@ -1,0 +1,127 @@
+{
+  "results": {
+    "sparbench": {
+      "alias": "sparbench",
+      "sparbench_score,none": 88.75,
+      "sparbench_score_stderr,none": "N/A"
+    }
+  },
+  "group_subtasks": {
+    "sparbench": []
+  },
+  "configs": {
+    "sparbench": {
+      "task": "sparbench",
+      "dataset_path": "jasonzhango/SPAR-Bench",
+      "dataset_kwargs": {
+        "token": false,
+        "cache_dir": "cache/sparbench"
+      },
+      "test_split": "test",
+      "full_docs": false,
+      "process_results_use_image": false,
+      "process_docs": "<function process_docs at 0x7949986d2200>",
+      "doc_to_visual": "<function sparbench_doc_to_visual at 0x7949986d2e80>",
+      "doc_to_text": "<function sparbench_doc_to_text at 0x7949986d3920>",
+      "doc_to_target": "answer",
+      "process_results": "<function sparbench_process_results at 0x794997d80d60>",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "sparbench_score",
+          "aggregation": "<function sparbench_aggregate_results at 0x794997d81940>",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "max_new_tokens": 100,
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "num_beams": 1,
+        "do_sample": false,
+        "until": [
+          "\n\n"
+        ]
+      },
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": [
+        {
+          "version": 0.0
+        }
+      ],
+      "lmms_eval_specific_kwargs": {
+        "default": {
+          "pre_prompt": "",
+          "mca_post_prompt": "Answer with the option's letter from the given choices directly.",
+          "na_post_prompt": "Please answer the question using a single word or phrase."
+        },
+        "gemini_api": {
+          "pre_prompt": "",
+          "mca_post_prompt": "Answer with the option's letter from the given choices directly.",
+          "na_post_prompt": "Do not response anything other than a single number!"
+        },
+        "gpt4v": {
+          "pre_prompt": "",
+          "mca_post_prompt": "Answer with the option's letter from the given choices directly.",
+          "na_post_prompt": "Do not response anything other than a single number!"
+        },
+        "pre_prompt": "",
+        "mca_post_prompt": "Answer with the option's letter from the given choices directly.",
+        "na_post_prompt": "Please answer the question using a single word or phrase."
+      }
+    }
+  },
+  "versions": {
+    "sparbench": "Yaml"
+  },
+  "n-shot": {
+    "sparbench": 0
+  },
+  "higher_is_better": {
+    "sparbench": {
+      "sparbench_score": true
+    }
+  },
+  "n-samples": {
+    "sparbench": {
+      "original": 7211,
+      "effective": 8
+    }
+  },
+  "config": {
+    "model": "qwen3_5",
+    "model_args": "pretrained=Journey9ni/SpatialStack-Qwen3.5-4B,use_flash_attention_2=true,max_num_frames=32,max_length=12800,geometry_encoder_path=facebook/VGGT-1B,disable_thinking=true",
+    "batch_size": "1",
+    "batch_sizes": [],
+    "device": null,
+    "use_cache": null,
+    "limit": 8.0,
+    "bootstrap_iters": 100000,
+    "gen_kwargs": "",
+    "random_seed": 0,
+    "numpy_seed": 1234,
+    "torch_seed": 1234,
+    "fewshot_seed": 1234
+  },
+  "git_hash": "b84ebaa",
+  "date": "20261124_155845",
+  "task_hashes": {
+    "sparbench": "45723b630cc1b8e3ee681f2695be2cb6a5c7ea2c89bec53727e38469cef06d83"
+  },
+  "model_source": "qwen3_5",
+  "model_name": "Journey9ni/SpatialStack-Qwen3.5-4B",
+  "model_name_sanitized": "Journey9ni__SpatialStack-Qwen3.5-4B",
+  "system_instruction": null,
+  "system_instruction_sha": null,
+  "fewshot_as_multiturn": false,
+  "chat_template": null,
+  "chat_template_sha": null,
+  "start_time": 694861.928114805,
+  "end_time": 694929.986841474,
+  "total_evaluation_time_seconds": "68.05872666893993"
+}

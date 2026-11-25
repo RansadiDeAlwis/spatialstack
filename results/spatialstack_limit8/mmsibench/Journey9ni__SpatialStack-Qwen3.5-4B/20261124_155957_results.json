@@ -1,0 +1,183 @@
+{
+  "results": {
+    "mmsibench": {
+      "alias": "mmsibench",
+      "Motion (Cam.),none": 0.6666666666666666,
+      "Motion (Cam.)_stderr,none": "N/A",
+      "average,none": 0.375,
+      "average_stderr,none": "N/A",
+      "Positional Relationship (Cam.–Obj.),none": [],
+      "Positional Relationship (Cam.–Obj.)_stderr,none": [],
+      "Attribute (Meas.),none": 0.0,
+      "Attribute (Meas.)_stderr,none": "N/A"
+    }
+  },
+  "group_subtasks": {
+    "mmsibench": []
+  },
+  "configs": {
+    "mmsibench": {
+      "task": "mmsibench",
+      "dataset_path": "RunsenXu/MMSI-Bench",
+      "dataset_kwargs": {
+        "token": false
+      },
+      "test_split": "test",
+      "full_docs": false,
+      "process_results_use_image": false,
+      "doc_to_visual": "<function msr_doc_to_visual at 0x7319f2be63e0>",
+      "doc_to_text": "<function msr_doc_to_text at 0x7319f2be6660>",
+      "doc_to_target": "answer",
+      "process_results": "<function msr_process_results at 0x7319f2be6b60>",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "Positional Relationship (Obj.-Obj.)",
+          "aggregation": "<function msr_aggregate_results at 0x7319f2be6f20>",
+          "higher_is_better": true
+        },
+        {
+          "metric": "Positional Relationship (Cam.-Obj.)",
+          "aggregation": "<function msr_aggregate_results at 0x7319f2be7240>",
+          "higher_is_better": true
+        },
+        {
+          "metric": "Positional Relationship (Cam.-Cam.)",
+          "aggregation": "<function msr_aggregate_results at 0x7319f2be7560>",
+          "higher_is_better": true
+        },
+        {
+          "metric": "Positional Relationship (Obj.-Reg.)",
+          "aggregation": "<function msr_aggregate_results at 0x7319f2be7880>",
+          "higher_is_better": true
+        },
+        {
+          "metric": "Positional Relationship (Cam.-Reg.)",
+          "aggregation": "<function msr_aggregate_results at 0x7319f2be7ba0>",
+          "higher_is_better": true
+        },
+        {
+          "metric": "Positional Relationship (Reg.-Reg.)",
+          "aggregation": "<function msr_aggregate_results at 0x7319f2be7ec0>",
+          "higher_is_better": true
+        },
+        {
+          "metric": "Attribute (Meas.)",
+          "aggregation": "<function msr_aggregate_results at 0x7319f2aa4220>",
+          "higher_is_better": true
+        },
+        {
+          "metric": "Attribute (Appr.)",
+          "aggregation": "<function msr_aggregate_results at 0x7319f2aa4540>",
+          "higher_is_better": true
+        },
+        {
+          "metric": "Motion (Obj.)",
+          "aggregation": "<function msr_aggregate_results at 0x7319f2aa4860>",
+          "higher_is_better": true
+        },
+        {
+          "metric": "Motion (Cam.)",
+          "aggregation": "<function msr_aggregate_results at 0x7319f2aa4b80>",
+          "higher_is_better": true
+        },
+        {
+          "metric": "MSR",
+          "aggregation": "<function msr_aggregate_results at 0x7319f2aa4ea0>",
+          "higher_is_better": true
+        },
+        {
+          "metric": "average",
+          "aggregation": "<function msr_aggregate_results at 0x7319f2aa51c0>",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "max_new_tokens": 2048,
+        "temperature": 0.0,
+        "do_sample": false,
+        "until": [
+          "\n\n"
+        ]
+      },
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": [
+        {
+          "version": 0.0
+        }
+      ],
+      "lmms_eval_specific_kwargs": {
+        "default": {
+          "pre_prompt": "",
+          "post_prompt": "\nAnswer with the option's letter from the given choices directly. Enclose the option's letter within ``."
+        },
+        "pre_prompt": "",
+        "post_prompt": "\nAnswer with the option's letter from the given choices directly. Enclose the option's letter within ``."
+      }
+    }
+  },
+  "versions": {
+    "mmsibench": "Yaml"
+  },
+  "n-shot": {
+    "mmsibench": 0
+  },
+  "higher_is_better": {
+    "mmsibench": {
+      "Positional Relationship (Obj.-Obj.)": true,
+      "Positional Relationship (Cam.-Obj.)": true,
+      "Positional Relationship (Cam.-Cam.)": true,
+      "Positional Relationship (Obj.-Reg.)": true,
+      "Positional Relationship (Cam.-Reg.)": true,
+      "Positional Relationship (Reg.-Reg.)": true,
+      "Attribute (Meas.)": true,
+      "Attribute (Appr.)": true,
+      "Motion (Obj.)": true,
+      "Motion (Cam.)": true,
+      "MSR": true,
+      "average": true
+    }
+  },
+  "n-samples": {
+    "mmsibench": {
+      "original": 1000,
+      "effective": 8
+    }
+  },
+  "config": {
+    "model": "qwen3_5",
+    "model_args": "pretrained=Journey9ni/SpatialStack-Qwen3.5-4B,use_flash_attention_2=true,max_num_frames=32,max_length=12800,geometry_encoder_path=facebook/VGGT-1B,disable_thinking=true",
+    "batch_size": "1",
+    "batch_sizes": [],
+    "device": null,
+    "use_cache": null,
+    "limit": 8.0,
+    "bootstrap_iters": 100000,
+    "gen_kwargs": "",
+    "random_seed": 0,
+    "numpy_seed": 1234,
+    "torch_seed": 1234,
+    "fewshot_seed": 1234
+  },
+  "git_hash": "b84ebaa",
+  "date": "20261124_155957",
+  "task_hashes": {
+    "mmsibench": "1e4db371d1e243e94d4efdf757617d698be3dc7ef54fceefa03acb3dea3e8cce"
+  },
+  "model_source": "qwen3_5",
+  "model_name": "Journey9ni/SpatialStack-Qwen3.5-4B",
+  "model_name_sanitized": "Journey9ni__SpatialStack-Qwen3.5-4B",
+  "system_instruction": null,
+  "system_instruction_sha": null,
+  "fewshot_as_multiturn": false,
+  "chat_template": null,
+  "chat_template_sha": null,
+  "start_time": 694934.700448845,
+  "end_time": 695007.312908954,
+  "total_evaluation_time_seconds": "72.61246010893956"
+}

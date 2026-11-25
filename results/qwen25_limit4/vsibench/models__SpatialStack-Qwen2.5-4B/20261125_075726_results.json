@@ -1,0 +1,126 @@
+{
+  "results": {
+    "vsibench": {
+      "alias": "vsibench",
+      "vsibench_score,none": 27.500000000000004,
+      "vsibench_score_stderr,none": "N/A"
+    }
+  },
+  "group_subtasks": {
+    "vsibench": []
+  },
+  "configs": {
+    "vsibench": {
+      "task": "vsibench",
+      "dataset_path": "nyu-visionx/VSI-Bench",
+      "dataset_kwargs": {
+        "token": false
+      },
+      "test_split": "test",
+      "full_docs": false,
+      "process_results_use_image": false,
+      "process_docs": "<function process_docs at 0x737c4a612980>",
+      "doc_to_visual": "<function vsibench_doc_to_visual at 0x737c4a612f20>",
+      "doc_to_text": "<function vsibench_doc_to_text at 0x737c4a613740>",
+      "doc_to_target": "ground_truth",
+      "process_results": "<function vsibench_process_results at 0x737c4a6b0400>",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "vsibench_score",
+          "aggregation": "<function vsibench_aggregate_results at 0x737c4a6b0c20>",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "max_new_tokens": 16,
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "num_beams": 1,
+        "do_sample": false,
+        "until": [
+          "\n\n"
+        ]
+      },
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": [
+        {
+          "version": 0.0
+        }
+      ],
+      "lmms_eval_specific_kwargs": {
+        "default": {
+          "pre_prompt": "",
+          "mca_post_prompt": "Answer with the option's letter from the given choices directly.",
+          "na_post_prompt": "Please answer the question using a single word or phrase."
+        },
+        "gemini_api": {
+          "pre_prompt": "",
+          "mca_post_prompt": "Answer with the option's letter from the given choices directly.",
+          "na_post_prompt": "Do not response anything other than a single number!"
+        },
+        "gpt4v": {
+          "pre_prompt": "",
+          "mca_post_prompt": "Answer with the option's letter from the given choices directly.",
+          "na_post_prompt": "Do not response anything other than a single number!"
+        },
+        "pre_prompt": "",
+        "mca_post_prompt": "Answer with the option's letter from the given choices directly.",
+        "na_post_prompt": "Please answer the question using a single word or phrase."
+      }
+    }
+  },
+  "versions": {
+    "vsibench": "Yaml"
+  },
+  "n-shot": {
+    "vsibench": 0
+  },
+  "higher_is_better": {
+    "vsibench": {
+      "vsibench_score": true
+    }
+  },
+  "n-samples": {
+    "vsibench": {
+      "original": 5130,
+      "effective": 4
+    }
+  },
+  "config": {
+    "model": "spatialstack",
+    "model_args": "pretrained=/mnt/4dgs/spatialstack/models/SpatialStack-Qwen2.5-4B,use_flash_attention_2=true,max_num_frames=32,max_length=12800",
+    "batch_size": "1",
+    "batch_sizes": [],
+    "device": null,
+    "use_cache": null,
+    "limit": 4.0,
+    "bootstrap_iters": 100000,
+    "gen_kwargs": "",
+    "random_seed": 0,
+    "numpy_seed": 1234,
+    "torch_seed": 1234,
+    "fewshot_seed": 1234
+  },
+  "git_hash": "b84ebaa",
+  "date": "20261125_075726",
+  "task_hashes": {
+    "vsibench": "3a94c265cf4851a378929c99779ade555fc5329e90e2c7ac4e920f1415754e42"
+  },
+  "model_source": "spatialstack",
+  "model_name": "/mnt/4dgs/spatialstack/models/SpatialStack-Qwen2.5-4B",
+  "model_name_sanitized": "models__SpatialStack-Qwen2.5-4B",
+  "system_instruction": null,
+  "system_instruction_sha": null,
+  "fewshot_as_multiturn": false,
+  "chat_template": null,
+  "chat_template_sha": null,
+  "start_time": 752383.548459182,
+  "end_time": 752424.196141195,
+  "total_evaluation_time_seconds": "40.64768201299012"
+}
