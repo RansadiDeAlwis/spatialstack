@@ -1,0 +1,9 @@
+$ env/bin/python repo/src/lora/merge_check.py /mnt/4dgs/spatialstack/lora_runs/scannetpp_lora5k   (run 2026-11-26)
+adapter: 200 LoRA modules, 18 fully trained fusion tensors
+tensors: base 3180  merged 3180  only-in-base 0  only-in-merged 0
+shape mismatches: 0
+dtype mismatches: 0
+non-LoRA tensors identical: 2944
+LoRA-merged weights correct: 200  (worst error / tolerance = 0.16)
+fusion-MLP tensors equal to trained values: 36  (of which changed vs base: 30)
+MERGE CHECK PASSED

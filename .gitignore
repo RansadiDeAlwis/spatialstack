@@ -6,3 +6,4 @@ data/
 *.bin
 *.pt
 __pycache__/
+REVIEW_PREP.md
